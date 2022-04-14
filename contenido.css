@@ -993,24 +993,35 @@ footer {
 
     #botonesPartes {
         position:relative;
-        top:100px;
+        top:150px;
 
 
     }
 
     #btnPrincipal {
         width: 100%;
+        height: 140px;
         margin-right: auto;
         margin-left: auto;
     
         
     }
 
+    #btnPrincipal h2 {
+        font-size: 40px;
+    }
+
     #btnSecundario {
         width: 100%;
+        height: 60px;
         margin-right: auto;
         margin-left: auto;
 
+    }
+
+    #btnSecundario small {
+        font-size: 15px;
+        top:30%;
     }
 
     #cajasRedes {
@@ -1021,9 +1032,167 @@ footer {
     
     }
 
+    #primeraSeccion {
+        height: 1000px;
+    }
+
     .tutorial {
         width: 35%;
     }
+
+    .titulos {
+        font-size: 30px;
+    }
+
+    .partes h1{
+        font-size: 3.2rem;
+        font-family:menu;
+        letter-spacing: 2.5px;
+        color:white;
+    }
+
+    #cajasRedes {
+        margin-left: 0px;
+        padding-top: 30px;
+    
+    }
+    
+    .redes {
+        border-radius: 50%;
+        background-color: white;
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .redes div img {
+        height: 58px;
+    }
+
+    #yoContacto {
+
+        height: 60px;
+        width: 60%;
+
+    }
+
+    #enviarAlternativa {
+        width: 90px;
+        height: 60px;
+
+    }
+
+    .servicios h1 {
+        font-size: 25px;
+    }
+
+    .servicios p {
+        font-size: 18px;
+    }
+
+    .servicios {
+        height: 250px;
+    
+    }
+
+    #serv2 {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top:310px;
+
+    }
+
+    #serv3 {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top:590px;
+    }
+
+    #serv4 {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top:870px;
+    }
+
+    #serv5 {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top:1150px;
+    }
+
+    #serv6 {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top:1430px;
+    }
+
+    #terceraSeccionNueva {
+        height: 1950px;
+
+    }
+
+    .estudio h1 {
+        font-size: 24px;
+    }
+
+    .estudio div {
+        height: 100px;
+        width: 100px;
+    }
+
+    .desgloseHabs {
+        width: 70%;
+        height: 25px;
+
+    }
+    
+    .porcentajeHabs {
+        height: 25px;  
+    }
+
+
+    
+    .tutorial {
+        margin-top: 130px;
+        margin-bottom: 0px;
+        position:absolute;
+    }
+
+    #quintaSeccion {
+        height: 830px;
+    }
+
+    #tutorial1 {
+        top:0px;
+    }
+
+    #tutorial2{
+        top:350px;
+    }
+
+    .tutorial h1{
+        font-size: 23px;
+    }
+
 
 
 
@@ -1038,7 +1207,7 @@ footer {
 @media only screen and (max-width: 1050px) {
     .formInputs {
         margin-left:20px;
-        width: 150px;
+        width: 400px;
     }
 
     .seccionFormulario {
