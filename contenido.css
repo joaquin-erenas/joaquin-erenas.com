@@ -235,7 +235,7 @@
 
 #yoContacto {
     margin: auto;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 60px;
     height: 50px;
     width: 40%;
@@ -270,6 +270,7 @@
     position:relative;
     top:20px;
     background: #111316;
+    
     width: 100%;
 
 }
@@ -405,7 +406,7 @@
     position:relative;
     top:20px;
     width: 100%;
-    background-color: #1f2227;;
+    background: #111316;
 
 }
 
@@ -451,7 +452,7 @@
     position:relative;
     top:20px;
     width: 100%;
-    background: #111316;
+    background-color: #1f2227;
 
 }
 
@@ -1056,12 +1057,7 @@ footer {
 
 @media only screen and (max-width: 1130px) {
 
-    .titulos {
-        font-size: 30px;
-    }
-
     #yoContacto {
-
         height: 60px;
         width: 60%;
 
@@ -1138,7 +1134,7 @@ footer {
     }
     
     #cuartaSeccion {
-        height: 1100px;
+        height: 1200px;
     
     }
     .estudio {
@@ -1147,27 +1143,44 @@ footer {
         margin-right: auto;
         left: 0;
         right: 0;
+        max-width: 75%;
+        height: 300px;
+        border-radius: 10px;
+        transition:0.4s;
+    }
 
+    .estudio:hover {
+        transform: translateY(-20px);
     }
 
     #estudioEso {
         top:0px;
+        border-top:1.5px solid #75b487;
+        border-bottom: 1.5px solid #75b487;
+        box-shadow: 0 0 .4vw #75b487;
     }
 
     #estudioMedio {
-        top:320px;
+        top:350px;
+        border-top:1.5px solid #b47c75;
+        border-bottom: 1.5px solid #b47c75;
+        box-shadow: 0 0 .4vw #b47c75;
     }
 
     #estudioSuperior {
-        top:620px;
+        top:700px;
+        border-top:1.5px solid #7584b4;
+        border-bottom: 1.5px solid #7584b4;
+        box-shadow: 0 0 .4vw #7584b4;
     }
     .estudio h1 {
         font-size: 28px;
     }
 
     .estudio div {
-        height: 150px;
-        width: 150px;
+        height: 120px;
+        width: 120px;
+
     }
 
     .estudio div img {
