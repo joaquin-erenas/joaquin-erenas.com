@@ -1,9 +1,9 @@
 .hamburger{
     position:fixed;
-    right: 10px;
+    right: 18px;
     top:15px;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     display: none;
     z-index: 400;
@@ -12,7 +12,7 @@
 .bar{
     display: block;
     width: 35px;
-    height: 4px;
+    height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;

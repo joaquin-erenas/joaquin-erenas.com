@@ -61,6 +61,7 @@
     font-family:menu;
     letter-spacing: 1px;
     color:white;
+    transition: 0.4s;
 }
 
 .partes h3 {
@@ -68,6 +69,8 @@
     font-size: 1.5rem;
     margin-bottom: 25px;
     letter-spacing: 2px;
+    transition: 0.4s;
+
 }
 
 #cajasRedes {
@@ -75,6 +78,8 @@
     justify-content: space-around;
     align-items: center;
     margin-left: -25px;
+    transition: 0.4s;
+
 
 }
 
@@ -429,8 +434,8 @@
 
 .estudio div {
     border-radius: 50%;
-    border:3px solid rgba(0, 255, 0, 0.233);
-    background-color: rgba(29, 28, 28, 0.336);
+    border: 3px solid #28cc88;
+    background-color: #ffffffe3;
     width: 90px;
     height: 90px;
 }
@@ -842,12 +847,11 @@ footer {
         width: 25%;
         height: 200px;
 
-    
     }
 
     textarea {
         margin-left:20px;
-        width:119.5%;
+        width:90%;
         resize:none;
     }
 
@@ -861,7 +865,7 @@ footer {
 
     .formInputs {
         margin-left:20px;
-        width: 307px;
+        width: 90%;
     }
 
 }
@@ -871,10 +875,7 @@ footer {
         font-size: 2rem;
 
     }
-    .formInputs {
-        margin-left:20px;
-        width: 283px;
-    }
+
 
     #terceraSeccionNueva {
         position:relative;
@@ -956,24 +957,12 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1250px) {
-    .formInputs {
-        margin-left:20px;
-        width: 250px;
-    }
-    
-}
 
-
-@media only screen and (max-width: 1130px) {
-    .formInputs {
-        margin-left:20px;
-        width: 200px;
-    }
+@media only screen and (max-width: 1200px) {
     .partes {
         position:absolute;
         top:100px;
-        width: 50%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -1029,23 +1018,26 @@ footer {
         justify-content: space-around;
         align-items: center;
         margin-left: 0px;
-    
+        padding-top: 60px;
     }
+
 
     #primeraSeccion {
         height: 1000px;
     }
 
-    .tutorial {
-        width: 35%;
+    .redes {
+        width: 100px;
+        height: 100px;
     }
 
-    .titulos {
-        font-size: 30px;
+    .redes img {
+        width: 60px;
+        height: 60px;
     }
 
     .partes h1{
-        font-size: 3.2rem;
+        font-size: 3.4rem;
         font-family:menu;
         letter-spacing: 2.5px;
         color:white;
@@ -1057,20 +1049,15 @@ footer {
     
     }
     
-    .redes {
-        border-radius: 50%;
-        background-color: white;
-        width: 80px;
-        height: 80px;
-        margin-right: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
 
-    .redes div img {
-        height: 58px;
+}
+
+
+
+@media only screen and (max-width: 1130px) {
+
+    .titulos {
+        font-size: 30px;
     }
 
     #yoContacto {
@@ -1149,14 +1136,43 @@ footer {
         height: 1950px;
 
     }
+    
+    #cuartaSeccion {
+        height: 1100px;
+    
+    }
+    .estudio {
+        position:absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
 
+    }
+
+    #estudioEso {
+        top:0px;
+    }
+
+    #estudioMedio {
+        top:320px;
+    }
+
+    #estudioSuperior {
+        top:620px;
+    }
     .estudio h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .estudio div {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
+    }
+
+    .estudio div img {
+        height: 80px;
+        width: 80px;
     }
 
     .desgloseHabs {
@@ -1169,16 +1185,19 @@ footer {
         height: 25px;  
     }
 
-
+    .infoTutorial {
+        height: 350px;
+    }
     
     .tutorial {
+        width: 60%;
         margin-top: 130px;
         margin-bottom: 0px;
         position:absolute;
     }
 
     #quintaSeccion {
-        height: 830px;
+        height: 1100px;
     }
 
     #tutorial1 {
@@ -1186,12 +1205,14 @@ footer {
     }
 
     #tutorial2{
-        top:350px;
+        top:500px;
     }
 
     .tutorial h1{
         font-size: 23px;
     }
+
+
 
 
 
@@ -1205,10 +1226,6 @@ footer {
 
 
 @media only screen and (max-width: 1050px) {
-    .formInputs {
-        margin-left:20px;
-        width: 400px;
-    }
 
     .seccionFormulario {
         text-align:left;
@@ -1235,7 +1252,7 @@ footer {
     #tamanioInputs {
         margin-left:0px;
         margin-right: 20px;
-        width: 385px;
+        width: 200px;
     }
     
     textarea {
@@ -1248,21 +1265,22 @@ footer {
         display: none;
     }
 
-    .tutorial {
-        width: 40%;
+    #botonVolver {
+        opacity: 0%;
+        cursor: none;
+        display: none;
+    
     }
-
     
 
 }
 
 @media only screen and (max-width:900px){
-    .formInputs {
-        width: 300px;
-    }
     #estudios {
         padding-left: 0px;
     }
+
+
 }
 
 
@@ -1288,13 +1306,6 @@ footer {
 
     .formInputs {
         width: 170px;
-    }
-
-    #botonVolver {
-        opacity: 0%;
-        cursor: none;
-        display: none;
-    
     }
 
     #botonesPartes {
