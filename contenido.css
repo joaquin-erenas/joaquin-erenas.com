@@ -435,8 +435,8 @@
 
 .estudio div {
     border-radius: 50%;
-    border: 3px solid #28cc88;
-    background-color: #ffffffe3;
+    border: 1px solid #f3f3f3;
+    background-color: #1d1919e3;
     width: 90px;
     height: 90px;
 }
@@ -1178,15 +1178,11 @@ footer {
     }
 
     .estudio div {
-        height: 120px;
-        width: 120px;
+        height: 100px;
+        width: 100px;
 
     }
 
-    .estudio div img {
-        height: 80px;
-        width: 80px;
-    }
 
     .desgloseHabs {
         width: 70%;
