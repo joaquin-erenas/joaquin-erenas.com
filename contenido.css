@@ -1293,7 +1293,11 @@ footer {
         padding-left: 0px;
     }
 
+    .partes {
+        width: 100%;
 
+
+    }
 }
 
 
@@ -1309,6 +1313,8 @@ footer {
     .imagenesLogos {
         display: none;
     }
+    
+
 }
 
 @media only screen and (max-width: 700px) {
