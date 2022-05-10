@@ -35,7 +35,7 @@
     width: 100%;
     background-size: cover;
     background-position: 50% 38%;
-    background-image: linear-gradient(black 0.05%,transparent 15%, black) ,url("media/fondoPrincipal.jpg");
+    background-image: linear-gradient(black 0.05%,transparent 15%, black), url("https://i.gifer.com/Gm7L.gif");
 
 }
 
@@ -270,10 +270,11 @@
     position:relative;
     top:20px;
     background: #111316;
-    
+    /*background:linear-gradient(1deg, rgba(17,19,22,1) 42%, rgba(0,0,0,1) 92%)*/
     width: 100%;
 
 }
+
 
 
 

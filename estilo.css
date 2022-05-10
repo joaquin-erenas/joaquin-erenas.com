@@ -59,15 +59,15 @@ header {
 }
 
 header.sticky {
-    background: #111316;
+    background: #070708;
     height: 60px;
-    border-bottom: 1px solid #28cc884f;
+    border-bottom: 1px solid #3296d83f;
 }
 
 
 #logo {
     position:absolute;
-    left:100px;
+    left:40px;
     font-size: 30px;
     letter-spacing: 3px;
     top:47%;
@@ -75,8 +75,7 @@ header.sticky {
     transform: translateY(-50%);
     font-family: menu;
     transition: 0.4s;
-    
-    
+     
 }
 
 #logoPrincipal {
@@ -102,8 +101,8 @@ header.sticky {
     top:50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 20px;
-    left:60px;
+    font-size: 23px;
+    left:30px;
 }
 
 
@@ -130,8 +129,8 @@ header.sticky {
 }
 .menuOpciones:hover {
     opacity: 100%;
-    color: #28cc88;
-    text-shadow: 0 0 1vw #28cc88, 0 0 3vw #28cc88, 0 0 10vw #28cc88, 0 0 10vw #28cc88, 0 0 .4vw #28cc88;
+    color: #3296d8;
+    text-shadow: 0 0 1vw #3296d8, 0 0 3vw #3296d8, 0 0 10vw #3296d8, 0 0 10vw #3296d8, 0 0 .4vw #3296d8;
 }
 
 
@@ -200,7 +199,7 @@ header.sticky {
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         font-size: 27px;
-        left:75px;
+        left: 30px;
     }
 
     #logoPrincipal {
@@ -212,16 +211,9 @@ header.sticky {
         left: 10px;
     
     }
-
-
-
-
-
-
-
-
-
 }
+
+
 
 
 
