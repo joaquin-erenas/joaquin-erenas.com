@@ -1,0 +1,1007 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+::selection {
+    background-color: #1986a160;
+}
+*,*::before,*::after {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 19;
+    width: 100%;
+
+}
+
+header.sticky {
+    background: #1d1d1fc4;
+    border-bottom: 1px solid #3296d83f;
+    color:white;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+
+#headerCentral {
+    padding: 20px 7.5%;
+    margin: 0 auto;
+
+}
+
+#layoutTop {
+    display: flex;
+}
+
+#layoutIzq {
+    flex: 1 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#layoutCentral {
+    flex: 0 1 406px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+
+}
+
+#layoutDcha {
+    flex: 1 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#layoutDcha button {
+    border-radius: 24px;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    height: 48px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    color:white;
+    background-color: #1985a1;
+    border: none;
+}
+
+#layoutDcha button:hover {
+    opacity: 90%;
+    cursor: pointer;
+}
+
+.seccion {
+    position:relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.seccion div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+.articulo {
+    position:relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.articulo div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#primeraSeccion {
+    top:50px;
+}
+
+
+.botonContacto{
+    border-radius: 24px;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    height: 48px;
+    border-radius: 24px;
+    margin-top: 25px;
+    align-items: center;
+    color:white;
+    background: #1985A1;
+    background: linear-gradient(to right, #1985A1 6%, #CB59CF 97%);
+    border: none;
+}
+
+.botonContacto:hover {
+    opacity: 90%;
+    cursor: pointer;
+}
+
+#imagenPresentacion {
+    border-radius: 50%;
+}
+
+#imagenPresentacion img {
+    border-radius: 50%;
+}
+
+#presentacionNombre {
+    border-left: 1px solid black;
+    padding-left: 50px;
+    align-items:flex-start;
+    max-width: 40%;
+
+}
+
+#presentacionNombre h1{
+    font-size: 3.5em;
+    font-weight: 600;
+}
+
+#presentacionNombre p {
+    font-size: 1.2em;
+    max-width: 90%;
+}
+
+
+#presentacionNombre div {
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.separadores {
+    height: 150px;
+    overflow: hidden;
+    position:relative;
+    top:0px;
+}
+
+#tituloSeccion {
+    display: flex;
+    justify-content: space-around;
+}
+
+#tituloSeccion div {
+    display: flex;
+    flex-direction:column;
+    margin-top: 50px;
+}
+
+#tituloSuperiorSeccion {
+    color: #f5f5f7;
+    opacity: .75;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -.04em;
+    margin: auto;
+
+}
+
+#fraseSuperiorSeccion {
+    font-size: 82px;
+    line-height: 1.1;
+    letter-spacing: -.045em;
+    margin-top: 60px;
+    margin-bottom: 20px;  
+    color:white; 
+    background: #1985A1;
+    background: linear-gradient(to right, #1985A1 6%, #CB59CF 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 70px;
+    margin: auto;
+    max-width: 85%;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border: 1px solid hsla(0,0%,51.4%,.16);
+    border-radius: 28px;
+    background-color: #1d1d1f;
+    color:white;
+    transition: 0.4s;
+    transform: translateY(0px);
+
+}
+
+.grid-container > div:hover {
+    transform: translateY(-20px);
+}
+
+
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item1 h4 {
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -.025em;
+    text-align: left;
+    margin-left: 5%;
+
+
+}
+
+.item1 p {
+    color: #f5f5f7;
+    opacity: .75;
+    letter-spacing: -.025em;
+    font-size: 20px;
+    max-width: 80%;
+    margin-left: 5%;
+    margin-top: 2%;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.numeroGrid{
+    text-align: center;
+    margin: auto;
+    font-size: 63px;
+    background: #2E4ECF;
+    background: linear-gradient(to right, #2E4ECF 13%, #9DCFA9 72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 25px;
+    padding-bottom: 0px;
+    
+}
+
+.explicacion_NumGrid {
+    margin: auto;
+    color: #f5f5f7;
+    opacity: .8;
+    letter-spacing: -.020em;
+    line-height: 1.2;
+
+}
+
+.spanItemNumero {
+    font-size: 50px;
+}
+
+#cuadroColor1{
+    background: #30CF11;
+    background: linear-gradient(to right, #30CF11 17%, #72CFB9 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#cuadroColor2 {
+    background: #2E4ECF;
+    background: linear-gradient(to right, #2E4ECF 13%, #9DCFA9 72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#cuadroColor3 {
+    background: #CF59A8;
+    background: linear-gradient(to right, #CF59A8 17%, #846ECF 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#cuadroColor4 {
+    background: #02CFBB;
+    background: linear-gradient(to right, #02CFBB 11%, #788CCF 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.item6 {
+    margin-top: 30px;
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+
+    /*background-size: 400% 400%;
+    animation: animacionGradient 15s ease infinite;*/
+}
+
+#fondoItem6 {
+    background: rgb(203,89,207);
+    background: linear-gradient(90deg, rgba(203,89,207,1) 21%, rgba(25,133,161,1) 77%);
+}
+
+@keyframes animacionGradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#videoDemo {
+    height: 320px;
+    width: 658px;
+    margin-left: 20px;
+    position:absolute;
+    border-radius: 10px;
+    top:40px;
+    background-image: url(https://media.csesoc.org.au/content/images/2019/10/learn11.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.item6 div {
+    display: flex;
+    flex-direction: column;
+}
+
+.item6 h1 {
+    line-height: 1.2;
+    letter-spacing: -.025em;
+    font-size: 37px;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 20%;
+}
+
+.item6 p {
+    color: #f5f5f7;
+    opacity: .75;
+    letter-spacing: -.025em;
+    font-size: 20px;
+    max-width: 80%;
+    margin-left: 5%;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 5%;
+
+}
+
+.item6 img {
+    width: 700px;
+    height: 500px;
+}
+
+.item7 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item7 div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.item7 div h3{
+    background: #88CF80;
+    background: linear-gradient(to right, #88CF80 0%, #631BCF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.item8 h2{
+    background: #CF0606;
+    background: linear-gradient(to right, #CF0606 0%, #4D6BCF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#textoJuegos {
+    min-width: 40%;
+}
+
+#fondoCuadroJuegos {
+    background: rgba(25,133,161,1);
+    background: linear-gradient(90deg, rgba(25,133,161,1) 21%, rgba(203,89,207,1) 77%);
+}
+
+#videoJuego {
+    height: 413px;
+    width: 245px;
+    margin-left: 133px;
+    transform: skew(-18deg);
+    z-index: 400;
+    position:absolute;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 33px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    top:35px;
+    background-image: url(https://c.tenor.com/1wZ88hrB5SwAAAAd/subway-surfer.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+#segundaSeccion {
+    background-color: #101014;
+    position:relative;
+
+}
+
+.habilidades {
+    border:1px solid rgba(255, 255, 255, 0.363);
+    width: 450px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-bottom: 27px;
+
+}
+
+.habilidades h4 {
+    position:relative;
+    text-align: center;
+    top:-30px;
+    
+}
+
+.tipoHabilidades {
+    color:white;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -.025em;
+    font-size: 33px;
+}
+
+.habilidad h3{
+    border-radius: 20px;
+    background-color: #02CFBB;
+    height: 38px;
+    left: -20.9px;
+    position:relative;
+    top:-75px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 3px;
+    color: #222222;
+    letter-spacing: -.025em;
+    color:rgba(0, 0, 0, 0.521);
+
+}
+
+#java {
+    width: 95%;
+    min-width: 95%;
+    background: linear-gradient(269deg, #d37dec, #7decd4);
+    background-size: 400% 400%;
+
+    -webkit-animation: animacionGradientHabs 10s ease infinite;
+    -moz-animation: animacionGradientHabs 10s ease infinite;
+    animation: animacionGradientHabs 10s ease infinite;
+}
+
+#cssHTML {
+    width: 81%;
+    min-width: 81%;
+    background: linear-gradient(269deg, #5e53f0, #8cec7d);
+    background-size: 400% 400%;
+
+    -webkit-animation: animacionGradientHabs 10s ease infinite;
+    -moz-animation: animacionGradientHabs 10s ease infinite;
+    animation: animacionGradientHabs 10s ease infinite;
+}
+
+#sql {
+    width: 90%;
+    min-width: 90%;
+    background: linear-gradient(269deg, #aba8dd, #be48ec);
+    background-size: 400% 400%;
+
+    -webkit-animation: animacionGradientHabs 10s ease infinite;
+    -moz-animation: animacionGradientHabs 10s ease infinite;
+    animation: animacionGradientHabs 10s ease infinite;
+}
+
+#c {
+    width: 55%;
+    min-width: 55%;
+    background: linear-gradient(269deg, #e23fc7, #e3ee4d);
+    background-size: 400% 400%;
+
+    -webkit-animation: animacionGradientHabs 10s ease infinite;
+    -moz-animation: animacionGradientHabs 10s ease infinite;
+    animation: animacionGradientHabs 10s ease infinite;
+}
+
+@-webkit-keyframes animacionGradientHabs {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes animacionGradientHabs {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes animacionGradientHabs {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#terceraSeccion {
+    background-color: #171218;
+}
+
+#cuartaSeccion {
+    background-color: #101014;
+}
+
+.formInputs {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+    background-color: #161618;
+    padding: 7px;
+    color:white;
+    border-radius: 5px ;
+    border:none;
+    transition: 0.4s;
+    margin-left:20px;
+    width: 80%;
+}
+
+.formInputs:focus {
+    box-shadow: 0px 2px 4px 0px #8259cf;
+}
+
+.contenedorEstudios {
+    margin:auto;
+    width:70%;
+    border: 1px solid hsla(0,0%,51.4%,.16);
+    border-radius: 20px;
+
+}
+
+.contenedorEstudios h3 {
+    color:white;
+}
+
+.contenedorEstudios h4 {
+    color:white;
+    font-style: italic;
+    font-size:medium;
+    margin-top: 10px;
+}
+
+.gridEstudios {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.gridEstudios  > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid rgba(0, 0, 0, 0.329);
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: #252525f3;
+
+}
+
+.imagenEstudio {
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background-color:red;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+
+.imagenEstudio img{
+    -o-object-fit: cover;
+    object-fit: cover;
+    position:relative;
+    top:50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#estudiosOficialesColor {
+    background: rgb(203,89,207);
+    background: linear-gradient(90deg, rgba(203,89,207,1) 21%, rgba(25,133,161,1) 77%);
+}
+
+#estudiosCursosColor {
+    background: rgba(25,133,161,1);
+    background: linear-gradient(90deg, rgba(25,133,161,1) 21%, rgb(203,89,207) 77%);
+}
+
+footer {
+    background-color: rgb(41, 41, 54);
+}
+
+footer h2 {
+    text-align: center;
+    padding-bottom: 25px;
+    color:white;
+    line-height: 1.2;
+    letter-spacing: -.025em;
+}
+
+@media only screen and (max-width: 1267px) {
+    #presentacionNombre h1{
+        font-size: 3em;
+    }
+
+    #videoDemo {
+        height: 310px;
+        width: 638px;
+    }
+
+    .item6 img {
+        width: 680px;
+        height: 480px;
+    }
+
+    .item6 h1 {
+        font-size: 30px;
+    }
+
+    .item7 div h3{
+        font-size: 27px;
+    
+    }
+    
+}
+
+@media only screen and (max-width: 1150px) {
+    #presentacionNombre h1{
+        font-size: 3em;
+    }
+
+
+    #videoDemo {
+        height: 275px;
+        width: 588px;
+        top:38px;
+
+    }
+
+    .item6 img {
+        width: 630px;
+        height: 430px;
+    }
+   
+}
+
+@media only screen and (max-width: 1100px) {
+    #presentacionNombre h1{
+        font-size: 3em;
+    }
+
+
+    #videoDemo {
+        height: 215px;
+        width: 495px;
+        top:200px;
+        margin-left: 17px;
+
+
+    }
+
+
+    .item6 img {
+        width: 530px;
+        height: 330px;
+    }
+
+    .item6 {
+        display: inline-block;
+   
+        /*background-size: 400% 400%;
+        animation: animacionGradient 15s ease infinite;*/
+    }
+
+    .item6 div {
+        display: inline-block;
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .item6 h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    
+    .item6 p {
+        max-width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    
+    }
+
+    #videoJuego {
+        top:252px;
+
+    }
+
+    .item7 div h3{
+        font-size: 20px;
+    
+    }
+
+    #layoutIzq h1 {
+        font-size: 25px;
+    }
+    #imagenPresentacion img {
+        height: 300px;
+    }
+    
+    #presentacionNombre {
+        max-width: 50%;
+    }
+
+    .item1 h4 {
+        font-size: 23px;
+    
+    
+    }
+    
+    .item1 p {
+        font-size: 19px;
+
+    }
+ 
+}
+
+@media only screen and (max-width: 1060px) {
+    footer h2 {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+    }
+
+    footer {
+        padding-top: 20px;
+    }
+
+    #videoJuego {
+        top:250px;
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .articulo {
+        position:relative;
+        display: block;
+        justify-content:center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    
+    .articulo div {
+        display: block;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .habilidades {
+        margin: auto;
+    }
+
+    #videoJuego {
+        top:248px;
+
+    }
+
+    
+
+}
+
+
+@media only screen and (max-width: 990px) {
+    .item7 div h3{
+        font-size: 16px;
+    }
+
+    #layoutIzq h1 {
+        font-size: 20px;
+    }
+
+    #videoJuego {
+        top:245.5px;
+        height: 415px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns:auto min-content;
+        gap: 10px;
+        padding: 10px;
+        padding-top: 70px;
+        margin: auto;
+    }
+
+    .numeroGrid{
+        text-align: center;
+        margin: auto;
+        font-size: 40px;
+        background: #2E4ECF;
+        background: linear-gradient(to right, #2E4ECF 13%, #9DCFA9 72%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 25px;
+        padding-bottom: 0px;
+        
+    }
+    
+    .explicacion_NumGrid {
+        margin: auto;
+        color: #f5f5f7;
+        opacity: .8;
+        letter-spacing: -.020em;
+        line-height: 1.2;
+        font-size: 20px;
+    
+    }
+
+    .spanItemNumero {
+        font-size: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 935px) {
+    #imagenPresentacion img {
+        height: 250px;
+    }
+    
+    #presentacionNombre {
+        max-width: 55%;
+    }
+
+    #videoJuego {
+        top:242px;
+    }
+
+
+    .item6 h1 {
+        font-size: 38px;
+    }
+
+    #videoDemo {
+        height: 215px;
+        width: 495px;
+        top:195px;
+        margin-left: 17px;
+
+
+    }
+   
+}
+
+
+@media only screen and (max-width: 860px) {
+    #videoJuego {
+        top:238px;
+    }
+    #layoutIzq h1 {
+        font-size: 20px;
+        padding: 20px;
+        width: 240px;
+    }
+
+    #videoDemo {
+        top:235px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #videoJuego {
+        top:235px;
+    }
+
+    #fraseSuperiorSeccion {
+        font-size: 60px;
+
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .grid-container {
+        display: block;
+        grid-template-columns:auto;
+        gap: 30px;
+        padding: 0px;
+        padding-top: 70px;
+        margin: auto;
+        max-width: 70%;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    #fraseSuperiorSeccion {
+        font-size: 40px;
+
+    }
+
+    .item6 {
+        display: none;
+    }
+
+    .item1 {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column: 1 / span 3;
+    }
+
+    .item5 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column: 1 / span 3;
+    }
+
+    #imagenPresentacion {
+        display: none;
+    }
+
+    #presentacionNombre {
+        max-width: 90%;
+        border: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
