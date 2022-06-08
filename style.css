@@ -94,7 +94,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    padding-bottom:150px;
 }
 
 .seccion div {
@@ -1003,7 +1003,7 @@ footer h2 {
 @media only screen and (max-width: 700px) {
 
     #fraseSuperiorSeccion {
-        font-size: 40px;
+        font-size: 43px;
 
     }
 
@@ -1011,14 +1011,41 @@ footer h2 {
         display: none;
     }
 
-
-    #imagenPresentacion {
-        display: none;
+    #primeraSeccion {
+        top:0px;
+    }
+    .seccion {
+        position:relative;
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom:150px;
+    }
+    
+    .seccion div {
+        display: block;
+        flex-direction: column;
+        margin-top: 50px;
     }
 
     #presentacionNombre {
-        max-width: 90%;
-        border: none;
+        max-width: 95%;
+        margin: auto;
+        margin-top: 30px;
+        border:none;
+    }
+
+    #presentacionNombre h1{
+        font-size: 2.8em;
+    }
+
+
+    #imagenPresentacion img{
+        border:1px solid red;
+
+        margin: auto;
+        display: flex;
+        justify-content: center;
     }
 }
 
