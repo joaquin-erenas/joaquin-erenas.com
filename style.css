@@ -845,7 +845,7 @@ footer h2 {
 
 @media only screen and (max-width: 990px) {
     .item7 div h3{
-        font-size: 16px;
+        font-size: 19px;
     }
 
     #layoutIzq h1 {
@@ -919,7 +919,35 @@ footer h2 {
         top:195px;
         margin-left: 17px;
 
+    }
 
+    .grid-container {
+        display: block;
+        gap: 0px;
+        padding: 0px;
+        padding-top: 70px;
+        margin: auto;
+        max-width: 70%;
+        
+
+    }
+
+    .grid-container > div {
+        margin: 20px;
+    
+    }
+
+
+    .item1 {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column: 1 / span 3;
+    }
+
+    .item5 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column: 1 / span 3;
     }
    
 }
@@ -952,17 +980,6 @@ footer h2 {
 }
 
 @media only screen and (max-width: 700px) {
-    .grid-container {
-        display: block;
-        grid-template-columns:auto;
-        gap: 30px;
-        padding: 0px;
-        padding-top: 70px;
-        margin: auto;
-        max-width: 70%;
-        margin: auto;
-        padding-bottom: 20px;
-    }
 
     #fraseSuperiorSeccion {
         font-size: 40px;
@@ -973,17 +990,6 @@ footer h2 {
         display: none;
     }
 
-    .item1 {
-        grid-row-start: 1;
-        grid-row-end: 1;
-        grid-column: 1 / span 3;
-    }
-
-    .item5 {
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column: 1 / span 3;
-    }
 
     #imagenPresentacion {
         display: none;
