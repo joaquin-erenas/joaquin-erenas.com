@@ -71,6 +71,7 @@ body {
 #layoutDcha button {
     border-radius: 24px;
     text-align: center;
+    position: relative;
     padding-left: 16px;
     padding-right: 16px;
     font-size: 18px;
@@ -80,12 +81,16 @@ body {
     display: flex;
     align-items: center;
     color:white;
-    background-color: #1985a1;
+    background: rgb(212, 49, 244);
+    background: linear-gradient(0deg, rgb(160, 151, 243) 0%, rgb(212, 49, 244) 100%);
     border: none;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
 }
 
+
 #layoutDcha button:hover {
-    opacity: 90%;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -137,6 +142,7 @@ body {
     background: #1985A1;
     background: linear-gradient(to right, #1985A1 6%, #CB59CF 97%);
     border: none;
+
 }
 
 .botonContacto:hover {
@@ -941,6 +947,8 @@ footer h2 {
 
     }
 
+    
+
     .grid-container > div {
         margin: 20px;
     
@@ -974,8 +982,7 @@ footer h2 {
 
 }
 
-@media only screen and (max-width: 853px) {
-}
+
 
 @media only screen and (max-width: 827px) {
     
@@ -998,21 +1005,9 @@ footer h2 {
         font-size: 60px;
 
     }
-}
-
-@media only screen and (max-width: 700px) {
-
-    #fraseSuperiorSeccion {
-        font-size: 43px;
-
-    }
-
-    .item6 {
-        display: none;
-    }
-
+    
     #primeraSeccion {
-        top:0px;
+        top:10px;
     }
     .seccion {
         position:relative;
@@ -1033,20 +1028,61 @@ footer h2 {
         margin: auto;
         margin-top: 30px;
         border:none;
+        padding-left: 0px;
+        text-align: center;
+
     }
 
     #presentacionNombre h1{
         font-size: 2.8em;
+
     }
 
+    #presentacionNombre p {
+        font-size: 1.2em;
+        max-width: 100%;
+    }
 
     #imagenPresentacion img{
-        border:1px solid red;
-
+        height: 320px;
         margin: auto;
         display: flex;
         justify-content: center;
+        margin-bottom: 70px;
     }
+
+    .botonContacto{
+        font-size: 27px;
+        height: 66px;
+
+    }
+
+    #layoutIzq h1 {
+        font-size: 23px;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    #fraseSuperiorSeccion {
+        font-size: 43px;
+
+    }
+
+    #videoDemo {
+        display: none;
+    }
+
+    #videoJuego {
+        display: none;
+    }
+    .item6 img{
+        display: none;
+    }
+
+
 }
 
 
