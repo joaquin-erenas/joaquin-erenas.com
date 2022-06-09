@@ -1,16 +1,25 @@
 window.addEventListener("scroll",function() {
     var jav = document.getElementById("java");
+    var prueba = document.getElementById("habs");
     var css = document.getElementById("cssHTML");
     var sql = document.getElementById("sql");
     var c = document.getElementById("c");
 
 
-    if ($(window).width() <= 600) {
-        jav.classList.toggle("activo",window.scrollY > 4300)
-        css.classList.toggle("activo",window.scrollY > 4400);
-        sql.classList.toggle("activo",window.scrollY > 4500);
-        c.classList.toggle("activo",window.scrollY > 4600);
+    jav.classList.toggle("activo",window.scrollY > (getOffset(jav).top-780))
+    css.classList.toggle("activo",window.scrollY > (getOffset(jav).top-780));
+    sql.classList.toggle("activo",window.scrollY > (getOffset(jav).top-700));
+    c.classList.toggle("activo",window.scrollY > (getOffset(jav).top-600));
 
-    }
+
 
 })
+
+function getOffset(el) {
+    const rect = el.getBoundingClientRect();
+    return {
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY
+  };
+}
+
