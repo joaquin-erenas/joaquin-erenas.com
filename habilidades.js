@@ -5,7 +5,7 @@ window.addEventListener("scroll",function() {
     var c = document.getElementById("c");
 
 
-    if ($(window).width() <= 700) {
+    if ($(window).width() <= 600) {
         jav.classList.toggle("activo",window.scrollY > 4300)
         css.classList.toggle("activo",window.scrollY > 4400);
         sql.classList.toggle("activo",window.scrollY > 4500);
@@ -13,5 +13,8 @@ window.addEventListener("scroll",function() {
         alert("Todo activado");
     }
 
-    
+    if ($(window).width() <= 600) {
+        alert("Activado abajo");
+    }
+
 })
