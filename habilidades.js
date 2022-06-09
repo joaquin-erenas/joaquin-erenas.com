@@ -6,7 +6,7 @@ window.addEventListener("scroll",function() {
     var c = document.getElementById("c");
 
 
-    jav.classList.toggle("activo",window.scrollY > (getOffset(jav).top-900))
+    jav.classList.toggle("activo",window.scrollY > (getOffset(jav).top-1000))
     css.classList.toggle("activo",window.scrollY > (getOffset(jav).top-820));
     sql.classList.toggle("activo",window.scrollY > (getOffset(jav).top-820));
     c.classList.toggle("activo",window.scrollY > (getOffset(jav).top-820));
