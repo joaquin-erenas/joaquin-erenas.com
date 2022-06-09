@@ -5,7 +5,7 @@ window.addEventListener("scroll",function() {
     var c = document.getElementById("c");
 
 
-    if ($(window).width() <= 650) {
+    if ($(window).width() <= 550) {
         jav.classList.toggle("activo",window.scrollY > 4300)
         css.classList.toggle("activo",window.scrollY > 4400);
         sql.classList.toggle("activo",window.scrollY > 4500);
