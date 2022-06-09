@@ -10,12 +10,7 @@ window.addEventListener("scroll",function() {
         css.classList.toggle("activo",window.scrollY > 4400);
         sql.classList.toggle("activo",window.scrollY > 4500);
         c.classList.toggle("activo",window.scrollY > 4600);
-    }
-    else {
-        jav.classList.toggle("activo",window.scrollY > 2600);
-        css.classList.toggle("activo",window.scrollY > 2700);
-        sql.classList.toggle("activo",window.scrollY > 2800);
-        c.classList.toggle("activo",window.scrollY > 2900);
+        alert("Todo activado");
     }
 
     
