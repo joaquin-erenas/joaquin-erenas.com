@@ -18,13 +18,30 @@ header {
     top: 0;
     z-index: 19;
     width: 100%;
-
+    padding: 20px 7.5%;
+    margin: 0 auto;
+    transition: 0.4s;
 }
 
 header.sticky {
-    background: #1d1d1fc4;
-    border-bottom: 1px solid #3296d83f;
+    background: #1d1d1fee;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
     color:white;
+    padding: 10px 7.5%;
+    animation: animacionBorde 4s infinite alternate;
+}
+
+@keyframes animacionBorde {
+    from {
+        border-bottom-color: rgb(160, 151, 243);
+
+    }
+    to {
+        border-bottom-color: rgb(212, 49, 244);
+
+    }
 }
 
 body {
@@ -33,11 +50,6 @@ body {
 }
 
 
-#headerCentral {
-    padding: 20px 7.5%;
-    margin: 0 auto;
-
-}
 
 #layoutTop {
     display: flex;
