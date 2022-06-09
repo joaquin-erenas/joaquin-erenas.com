@@ -6,10 +6,10 @@ window.addEventListener("scroll",function() {
     var c = document.getElementById("c");
 
 
-    jav.classList.toggle("activo",window.scrollY > (getOffset(jav).top-780))
-    css.classList.toggle("activo",window.scrollY > (getOffset(jav).top-780));
-    sql.classList.toggle("activo",window.scrollY > (getOffset(jav).top-700));
-    c.classList.toggle("activo",window.scrollY > (getOffset(jav).top-600));
+    jav.classList.toggle("activo",window.scrollY > (getOffset(jav).top-820))
+    css.classList.toggle("activo",window.scrollY > (getOffset(jav).top-820));
+    sql.classList.toggle("activo",window.scrollY > (getOffset(jav).top-820));
+    c.classList.toggle("activo",window.scrollY > (getOffset(jav).top-820));
 
 
 
