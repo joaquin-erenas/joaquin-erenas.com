@@ -10,11 +10,7 @@ window.addEventListener("scroll",function() {
         css.classList.toggle("activo",window.scrollY > 4400);
         sql.classList.toggle("activo",window.scrollY > 4500);
         c.classList.toggle("activo",window.scrollY > 4600);
-        alert("Todo activado");
-    }
 
-    if ($(window).width() <= 600) {
-        alert("Activado abajo");
     }
 
 })
