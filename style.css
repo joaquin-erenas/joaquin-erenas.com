@@ -515,47 +515,78 @@ body {
 }
 
 #java {
-    width: 95%;
-    min-width: 95%;
+    width: 0%;
+    min-width: 0%;
     background: linear-gradient(269deg, #d37dec, #7decd4);
     background-size: 400% 400%;
-
+    transition: .6s;
     -webkit-animation: animacionGradientHabs 10s ease infinite;
     -moz-animation: animacionGradientHabs 10s ease infinite;
     animation: animacionGradientHabs 10s ease infinite;
+}
+
+#java.activo {
+    width: 95%;
+    min-width: 95%;
+}
+
+@keyframes prueba {
+    from {
+        width: 0%;
+        min-width: 0%;
+    }
+    to {
+        width: 95%;
+        min-width: 95%;
+    }
 }
 
 #cssHTML {
-    width: 81%;
-    min-width: 81%;
+    width: 0%;
+    min-width: 0%;
     background: linear-gradient(269deg, #5e53f0, #8cec7d);
     background-size: 400% 400%;
-
+    transition: .6s;
     -webkit-animation: animacionGradientHabs 10s ease infinite;
     -moz-animation: animacionGradientHabs 10s ease infinite;
     animation: animacionGradientHabs 10s ease infinite;
+}
+
+#cssHTML.activo  {
+    width: 81%;
+    min-width: 81%;
 }
 
 #sql {
-    width: 90%;
-    min-width: 90%;
+    width: 0%;
+    min-width: 0%;
     background: linear-gradient(269deg, #aba8dd, #be48ec);
     background-size: 400% 400%;
-
+    transition: .6s;
     -webkit-animation: animacionGradientHabs 10s ease infinite;
     -moz-animation: animacionGradientHabs 10s ease infinite;
     animation: animacionGradientHabs 10s ease infinite;
 }
 
+#sql.activo  {
+    width: 90%;
+    min-width: 90%;
+}
+
 #c {
-    width: 55%;
-    min-width: 55%;
+    width: 0%;
+    min-width: 0%;
     background: linear-gradient(269deg, #e23fc7, #e3ee4d);
     background-size: 400% 400%;
-
+    transition: .6s;
     -webkit-animation: animacionGradientHabs 10s ease infinite;
     -moz-animation: animacionGradientHabs 10s ease infinite;
     animation: animacionGradientHabs 10s ease infinite;
+}
+
+#c.activo  {
+    width: 55%;
+    min-width: 55%;
 }
 
 @-webkit-keyframes animacionGradientHabs {
@@ -573,6 +604,8 @@ body {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
+
 
 #terceraSeccion {
     background-color: #171218;

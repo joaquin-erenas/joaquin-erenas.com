@@ -16,10 +16,4 @@ barraJava.classList.toggle("activo",window.scrollY > 2000);
 
 
 
-
-
-
-
-
-
 })
