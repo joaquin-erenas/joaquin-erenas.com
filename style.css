@@ -24,25 +24,16 @@ header {
 }
 
 header.sticky {
-    background: #1d1d1fee;
+    background: #1d1d1ffa;
 
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.267);
     color:white;
     padding: 10px 7.5%;
-    animation: animacionBorde 4s infinite alternate;
 }
 
-@keyframes animacionBorde {
-    from {
-        border-bottom-color: rgb(160, 151, 243);
 
-    }
-    to {
-        border-bottom-color: rgb(212, 49, 244);
-
-    }
-}
 
 body {
     overflow-x: hidden;
@@ -653,10 +644,16 @@ body {
 
 .contenedorEstudios h3 {
     color:white;
+    line-height: 1.6;
+    letter-spacing: -.04em;
 }
 
 .contenedorEstudios h4 {
-    color:white;
+    color: #f5f5f7;
+    opacity: .75;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -.04em;
     font-style: italic;
     font-size:medium;
     margin-top: 10px;
@@ -679,11 +676,14 @@ body {
 
 }
 
+
+
 .imagenEstudio {
     width:90px;
     height:90px;
     border-radius:50%;
-    background-color:red;
+    background-color:rgba(82, 82, 82, 0.685);
+    border:2px solid white;
     margin:auto;
     margin-top: 20px;
     margin-bottom: 20px;   
