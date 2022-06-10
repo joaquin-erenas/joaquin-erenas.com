@@ -469,6 +469,14 @@ body {
     background-position: center; 
 }
 
+#manoMovil {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    top:-40px;
+    transform: skew(-18deg);
+}
+
 #segundaSeccion {
     background-color: #101014;
     position:relative;
@@ -955,17 +963,15 @@ footer h2 {
         max-width: 55%;
     }
 
-    #videoJuego {
-        top:242px;
+
+
+    .item6 h1 {
+        font-size: 38px;
     }
 
     #videoJuego {
         top:240px;
         height: 415px;
-    }
-
-    .item6 h1 {
-        font-size: 38px;
     }
 
     .item6 img {
@@ -1116,6 +1122,38 @@ footer h2 {
 
     }
 
+
+    .item6 img {
+        width: 400px;
+        height: 300px;
+    }
+
+    #videoDemo {
+        height: 200px;
+        width: 374px;
+        top:230px;
+        margin-left: 14px;
+
+    }
+
+    #manoMovil {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        top:-40px;
+        transform: skew(-18deg);
+    }
+
+    #videoJuego {
+        height: 347px;
+        width: 206px;
+        top:268px;
+        margin-left: 110px;
+
+    }
+
+
+    /*
     #videoDemo {
         display: none;
     }
@@ -1125,10 +1163,52 @@ footer h2 {
     }
     .item6 img{
         display: none;
-    }
+    }*/
 
 
 }
+
+@media only screen and (max-width: 650px) {
+
+    #videoDemo {
+        top:252px;
+
+    }
+
+    #videoJuego {
+        top:292px;
+
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .item6 img {
+        width: 300px;
+        height: 200px;
+    }
+
+    #videoDemo {
+        height: 130px;
+        width: 282px;
+        top:247px;
+        margin-left: 8px;
+
+    }
+
+    #manoMovil {
+        display: none;
+
+    }
+
+    #videoJuego {
+        display: none;
+
+    }
+
+    
+}
+
 
 
 

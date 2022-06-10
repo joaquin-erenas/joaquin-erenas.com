@@ -1,16 +1,16 @@
 window.addEventListener("scroll",function() {
     var jav = document.getElementById("java");
-    var prueba = document.getElementById("habs");
+    var articulo = document.getElementById("activadorHabs");
     var css = document.getElementById("cssHTML");
     var sql = document.getElementById("sql");
     var c = document.getElementById("c");
 
 
-    jav.classList.toggle("activo",window.scrollY > (getOffset(jav).top-1000))
-    css.classList.toggle("activo",window.scrollY > (getOffset(jav).top-820));
-    sql.classList.toggle("activo",window.scrollY > (getOffset(jav).top-820));
-    c.classList.toggle("activo",window.scrollY > (getOffset(jav).top-820));
-    
+    jav.classList.toggle("activo",window.scrollY > (getOffset(articulo).top-300))
+    css.classList.toggle("activo",window.scrollY > (getOffset(articulo).top-300));
+    sql.classList.toggle("activo",window.scrollY > (getOffset(articulo).top-300));
+    c.classList.toggle("activo",window.scrollY > (getOffset(articulo).top-300));
+
 
 
 })
