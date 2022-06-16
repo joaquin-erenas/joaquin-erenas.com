@@ -1,18 +1,19 @@
 window.addEventListener("scroll",function() {
 var header = document.querySelector("header");
 var logo = document.getElementById("logo");
-var logoPrincipal = document.getElementById("logoPrincipal");
-var menu = document.querySelector(".menuLateral");
-var barraJava = document.getElementById("java");
+var enlaceUno = document.getElementById("a");
+var enlaceDos = document.getElementById("b");
+var enlaceTres = document.getElementById("x");
+var enlaceCuatro = document.getElementById("d");
 
 
 
 header.classList.toggle("sticky",window.scrollY > 0);
 logo.classList.toggle("sticky",window.scrollY > 0);
-logoPrincipal.classList.toggle("sticky",window.scrollY > 0);
-menu.classList.toggle("sticky",window.scrollY > 0);
-
-barraJava.classList.toggle("activo",window.scrollY > 2000);
+enlaceUno.classList.toggle("sticky",window.scrollY > 0);
+enlaceDos.classList.toggle("sticky",window.scrollY > 0);
+enlaceTres.classList.toggle("sticky",window.scrollY > 0);
+enlaceCuatro.classList.toggle("sticky",window.scrollY > 0);
 
 
 

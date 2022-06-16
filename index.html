@@ -4,32 +4,87 @@
         <title>Inicio | Joaquín Erenas </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.6">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="shortcut icon" href="icon.png">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="slider.css">
+        <link rel="stylesheet" type="text/css" href="sliderFotos.css">
+        <link rel="stylesheet" type="text/css" href="flexBox.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
+        <script type="text/typescript" src="videoScript.ts"></script>
         <script src="sticky.js"></script>
         <script src="habilidades.js"></script>
+        <script src="sliderFotos.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/typescript" src="script.ts"></script>
+        <script type="text/typescript">
+            const video = document.getElementById('main-video') as HTMLVideoElement;
+            video.addEventListener('ended', () => {
+            video.currentTime = 0.3;
+            video.play();
+            });
+        </script>
 
 
         <script>
             $("document").ready( function () {
-                alert("El portfolio se encuentra inoperativo debido a su mantenimiento. Disculpen las molestias.");
+                alert("El portfolio se encuentra inoperativo debido a su mantenimiento y actualización. Para más información contactar al siguiente correo electrónico: joaquinerenas23@gmail.com. Disculpen las molestias.");
             }); 
         </script>
+
+        <!--
+        <article class="visorProyecto">
+            <div class="ventanaProyecto">
+                <h1 style="color:black;text-align:center"></h1>
+                <div class="contenedoresProyecto">
+                    <div class="slideshow-container">
+                        <div class="mySlides1">
+                          <img src="inicioStone.png" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides1">
+                          <img src="oldPortfolio.png" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides1">
+                          <img src="https://cuttingedgepr.com/wp-content/uploads/2020/06/Project-management-2-Shutterstock_706715482.jpg" style="width:100%">
+                        </div>
+                      
+                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    </div>
+                    <div class="contenedorInfo">
+                        <h1 style="color: black;">Stonehearth</h1>
+                        <p style="color: black;">Este juego fue creado para sajdaskdjask Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </article>-->
+        <div class="video-wrapper">
+            <video autoplay muted id="main-video">
+                <source src="videoPortfolio.mp4" type="video/mp4"></source>
+             </video>
+        </div>
 
         <header>
             <div> 
                 <div id="layoutTop">
                     <div id="layoutIzq">
-                        <h1>Joaquín Erenas</h1>
+                        <a href="index.html"><img src="icon.png" id="logo"></a>
                     </div>
-                    <div id="layoutCentral">
-
+                    <div id="layoutCentral">                   
+                        <ul id="listaMenu">
+                            <li><a id="a" href="#">Inicio</a></li>
+                            <li><a id="b" href="#">Sobre mí</a></li>
+                            <li><a id="x" href="#">Habilidades</a></li>
+                            <li><a id="d" href="#">Proyectos</a></li>
+                        </ul>
                     </div>
                     <div id="layoutDcha">
                         <button>Contactar</button>
@@ -38,33 +93,25 @@
             </div>
         </header>
 
-        <section class="seccion" id="primeraSeccion">
-            <div>
-    
-            </div>
-            <div id="imagenPresentacion">
-                <img src="https://img.freepik.com/foto-gratis/retrato-asiatico-joven-muchacha-aislado_53876-70968.jpg">
-            </div>
+        <section id="primeraSeccion">
             <div id="presentacionNombre">
                 <h1>Joaquín Erenas</h1>
                 <h4>Desarrollador <span style="color:#1985A1">web</span></h4>
-                <p>Estudiante trabajador en busca de empleo. Tecnológicamente hábil, con ganas de
-                    aprender entre profesionales del sector.
-                    Aporto una actitud positiva y la voluntad y motivación para aprender todo lo que se
-                    me encargue.</p>
+
                 <button class="botonContacto">Obtener currículum</button>
-            </div>
-            <div>
             </div>
         </section>
 
-        <div class="separadores" >
+
+        
+        <div class="separadores" style="background-color: #FDFFFF;margin-top: 0px;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M-1.12,84.37 C203.72,167.27 349.20,-49.98 518.05,24.17 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #231F20;"></path>
+                <path d="M 0,600 C 0,600 0,200 0,200 C 78.67179487179487,197.77692307692308 157.34358974358975,195.55384615384614 247,179 C 336.65641025641025,162.44615384615386 437.2974358974359,131.56153846153845 523,142 C 608.7025641025641,152.43846153846155 679.4666666666667,204.2 743,236 C 806.5333333333333,267.8 862.8358974358974,279.6384615384615 932,272 C 1001.1641025641026,264.3615384615385 1083.1897435897436,237.24615384615385 1170,222 C 1256.8102564102564,206.75384615384615 1348.4051282051282,203.37692307692308 1440,200 C 1440,200 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="#231f2088" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+                <path d="M-1.12,84.37 C203.72,167.27 349.20,-49.98 518.05,24.17 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #111111;"></path>
             </svg>
         </div>
 
-        <section style="background-color: #231F20;padding-bottom: 100px;">
+        <section style="background-color: #111111;padding-bottom: 100px;">
             <div id="tituloSeccion">
                 <div>
                     <h4 id="tituloSuperiorSeccion">Servicios</h4>
@@ -76,7 +123,10 @@
                 <div class="item1">
                     <h4>Servicios eficientes y ordenados para todo lo necesario.</h4>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Estudiante trabajador en busca de empleo. Tecnológicamente hábil, con ganas de
+                    aprender entre profesionales del sector.
+                    Aporto una actitud positiva y la voluntad y motivación para aprender todo lo que se
+                    me encargue.
                     </p>
                 </div>
                 <div class="item2">
@@ -101,7 +151,7 @@
                         <p>Blalalalallalablblalba lbalbalbalbla lbalbalblal<br>jsadjasjdjajsdj</p>
                     </div>
                     <div>
-                        <div id="videoDemo">
+                        <div id="videoDemo" class="web">
 
                         </div>
                         <img src="tele.png">
@@ -123,19 +173,80 @@
                     <h4 class="explicacion_NumGrid" style="padding-left:15px;padding-right:15px">Código lioso</h4>
                 </div>
                 <div class="item6" id="fondoCuadroJuegos">
-                    <div id="textoJuegos">
-                        <h1>Desarrollo de videojuegos </h1>
+                    <div>
+                        <h1>Desarrollo de videojuegos</h1>
                         <p>Blalalalallalablblalba lbalbalbalbla lbalbalblal<br>jsadjasjdjajsdj</p>
+                    </div>
+                    <div>
+                        <div id="videoDemo" class="juego">
+
+                        </div>
+                        <img src="tele.png">
                     </div>
                 </div>
               </div>
         </section>
 
-        <div class="separadores"  id="activadorHabs" style="background-color: #231F20;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M-1.69,-0.48 C109.47,-1.47 304.17,147.52 501.12,-1.47 L500.00,150.00 L-3.38,154.43 Z" style="stroke: none; fill: #101014;"></path>
-            </svg>
-        </div>
+        <section id="separadorFrase">
+            <h1>Servicios eficientes y ordenados para todo lo necesario</h1>
+        </section>
+
+        <section id="terceraSeccion">
+            <div id="tituloSeccion" style="margin-bottom:40px;">
+                <div>
+                    <h4 id="tituloSuperiorSeccion">Experiencia</h4>
+                    <h2 id="fraseSuperiorSeccion">Todos mis proyectos.</h2>
+                </div>
+                
+            </div>
+            <div class="flex-container">
+                <div id="proyectoUno">
+                    <div class="bordeProyectos">
+                        <div class="side" id="imagenUno">
+                        
+                        </div>
+                        <div class="side back">
+                            <h1>holaaa</h1>
+                        </div>
+
+                    </div>
+                    <div class="bordeProyectos">
+                        <div class="side" id="imagenDos">
+                        
+                        </div>
+                        <div class="side back"></div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="flex-container">
+                <div id="proyectoUno">
+                    <div class="bordeProyectos">
+                        <div class="side" id="imagenTres">
+                        
+                        </div>
+                        <div class="side back"></div>
+
+                    </div>
+                    <div class="bordeProyectos" style="margin-bottom:100px;">
+                        <div class="side" id="imagenCuatro">
+                        
+                        </div>
+                        <div class="side back"></div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="separadores" style="background-color: #111316">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" id="activadorHabs" style="height: 100%; width: 100%;">
+                    <path d="M-1.12,84.37 C203.72,167.27 349.20,-49.98 518.05,24.17 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #0c0c0c;"></path>
+                </svg>
+            </div>
+        </section>
 
         <section id="segundaSeccion">
             <div id="tituloSeccion">
@@ -201,70 +312,12 @@
                 </div>
             </article>
         </section>
-        <div class="separadores" style="background-color: #101014;">
+        <div class="separadores" style="background-color: #0c0c0c;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M-1.12,84.37 C203.72,167.27 349.20,-49.98 518.05,24.17 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #171218"></path>
+                <path d="M-1.12,84.37 C203.72,167.27 349.20,-49.98 518.05,24.17 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #101014"></path>
             </svg>
         </div>
-        <section id="terceraSeccion">
-            <div id="tituloSeccion" style="margin-bottom:40px;">
-                <div>
-                    <h4 id="tituloSuperiorSeccion">Experiencia</h4>
-                    <h2 id="fraseSuperiorSeccion">Todos mis proyectos.</h2>
-                </div>
 
-            </div>
-            <div class="proyectos" style="padding-bottom: 100px;">
-
-                <div class="container">
-                    <input type="radio" name="slider" id="item-1" checked>
-                    <input type="radio" name="slider" id="item-2">
-                    <input type="radio" name="slider" id="item-3">
-        
-                    <div class="cards">
-                        <label class="card" for="item-1" id="selector-1">
-                            <img src="oldPortfolio.png">
-                            <h1>Mi primer portfolio</h1>
-                        </label>
-                        <label class="card" for="item-2" id="selector-2">
-                            <img src="stonehearth.png">
-                            <h1>Stonehearth</h1>
-                        </label>
-                        <label class="card" for="item-3" id="selector-3">
-                            <img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/8b9daf25-19c2-4746-9690-3c19f6d7bd2b.jpg">
-                            <h1>Otro</h1>
-                        </label>
-
-        
-                    </div>
-                </div>
-                <div class="container">
-                    <h1>Encargar un proyecto</h1>
-                    <form method="post">
-                        <table>
-                            <tr>
-                                <td><input type="text" class ="formInputs" placeholder="Tu nombre" required></td>
-                                <td><input type="text" class="formInputs"  placeholder="Correo electrónico" required ></td>
-                            </tr>
-                        </table>
-                        <br><br>
-                        <textarea rows="5" cols="10" placeholder="Introduce un mensaje" class="formInputs"  style="width:90%;resize:none;" required ></textarea>
-                        <br><br>
-                        <input type="submit" class="formInputs" id="botonFormulario" value="ENVIAR">
-
-
-
-                    </form>
-                    
-                </div>
-        
-            </div>
-            <div class="separadores" style="background-color: #171218">
-                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path d="M-1.12,84.37 C203.72,167.27 349.20,-49.98 518.05,24.17 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #101014;"></path>
-                </svg>
-            </div>
-        </section>
 
         <section id="cuartaSeccion">
             <div id="tituloSeccion" style="margin-bottom:40px;">
@@ -276,66 +329,71 @@
             </div>
             <div class="contenedorEstudios" id="estudiosOficialesColor">
                 <div class="gridEstudios">
-                    <div>
-                        <div class="imagenEstudio" id="eso">
-                            <img src="instituto.png">
-                        </div>
-                        <h3>ESO</h3>
-                        <h4>IES Neil Armstrong</h4>
-                        <h4>2014-2018</h4>
-                    </div>
-                    <div>
+                    <div class="estudiosFondo" id="estudio1">
                         <div class="imagenEstudio">
                             <img src="smr.png">
                         </div>
-                        <h3>SMR</h3>
-                        <h4>IIT Calderón de la Barca</h4>
-                        <h4>2019-2020</h4>
+                        <div class="infoEstudios">
+                            <h3>Sistemas microinformáticos y redes</h3>
+                            <h4>IIT Calderón de la Barca</h4>
+                            <h4>2019-2020</h4>
+                        </div>
+
                     </div>
-                    <div>
+                    <div class="estudiosFondo" id="estudio2">
                         <div class="imagenEstudio">
                             <img src="daw.png">
                         </div>
-                        <h3>DAW</h3>
-                        <h4>IES Enrique Tierno Galván</h4>
-                        <h4>2021-2023</h4>
-                    </div>  
-                </div>
-            </div>
-            <div class="contenedorEstudios" style="margin-top:40px;" id="estudiosCursosColor">
-                <div class="gridEstudios">
-                    <div>
-                        <div class="imagenEstudio" id="eso">
+                        <div class="infoEstudios">
+                            <h3>Desarrollo aplicaciones web</h3>
+                            <h4>IES Enrique Tierno Galván</h4>
+                            <h4>2021-2023</h4>
+                        </div>
+                    </div> 
+                    <div class="estudiosFondo" id="estudio3">
+                        <div class="imagenEstudio">
                             <img src="python.png">
                         </div>
-                        <h3>Curso profesional de Python</h3>
-                        <h4>códigofacilito</h4>
-                        <h4>2022</h4>
-                    </div>
-                    <div>
-                        <div class="imagenEstudio">
-                            <img src="sql.png">
+                        <div class="infoEstudios">
+                            <h3>Curso profesional de Python</h3>
+                            <h4>códigofacilito</h4>
+                            <h4>2022</h4>
                         </div>
-                        <h3>Curso profesional de base de datos&nbsp;&nbsp;</h3>
-                        <h4>códigofacilito</h4>
-                        <h4>2022</h4>
 
                     </div>
-                    <div>
+                    <div class="estudiosFondo" id="estudio5">
                         <div class="imagenEstudio">
                             <img src="ingles.png">
                         </div>
-                        <h3>Cambridge C1</h3>
-                        <h4>IES Neil Armstrong</h4>
-                        <h4>2018</h4>
+                        <div class="infoEstudios">
+                            <h3>Cambridge C1</h3>
+                            <h4>IES Neil Armstrong</h4>
+                            <h4>2018</h4>
+                        </div>
+
                     </div>  
-                    <div>
+                    <div class="estudiosFondo" id="estudio4">
+                        <div class="imagenEstudio">
+                            <img src="sql.png">
+                        </div>
+                        <div class="infoEstudios">
+                            <h3>Curso profesional de base de datos</h3>
+                            <h4>códigofacilito</h4>
+                            <h4>2022</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="estudiosFondo" id="estudio6">
                         <div class="imagenEstudio">
                             <img src="freecodecamp.png" style="filter:invert(100%);">
                         </div>
-                        <h3>Responsive Web Design</h3>
-                        <h4>freeCodeCamp</h4>
-                        <h4>Actual</h4>
+                        <div class="infoEstudios">
+                            <h3>Responsive Web Design</h3>
+                            <h4>freeCodeCamp</h4>
+                            <h4>Actual</h4>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -348,7 +406,10 @@
             <h2>©️ 2022 Copyright: Joaquín-Erenas.es</h2>
         </footer>
 
-       
+        <div class="cursor"></div>
+        <script src="https://rawgit.com/Microsoft/TypeScript/master/lib/typescriptServices.js"></script>
+        <script src="https://rawgit.com/basarat/typescript-script/master/transpiler.js"></script>
+        
     </body>
 
 </html>
