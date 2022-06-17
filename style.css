@@ -4,6 +4,12 @@
 ::selection {
     background-color: #1986a160;
 }
+
+body {
+
+
+}
+
 *,*::before,*::after {
     padding: 0;
     margin: 0;
@@ -13,18 +19,71 @@
 
 }
 
+
+
+video {
+    object-fit:fill;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+}
+.video-wrapper {
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    top:0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-width: 100%; 
+    min-height: 100%; 
+  
+    width: auto;
+    height: auto;
+}
+
+
+#logo {
+    width:64px;
+    height:64px;
+    border-radius:20px;
+    transition: 0.4s;
+
+}
+
+#logo.sticky {
+    width:48px;
+    height:48px;
+}
+
 header {
     position: sticky;
     top: 0;
     z-index: 19;
     width: 100%;
-
+    padding: 20px 7.5%;
+    margin: 0 auto;
+    transition: 0.4s;
+    background-color: #EEF0F5;
 }
 
 header.sticky {
-    background: #1d1d1fc4;
-    border-bottom: 1px solid #3296d83f;
+    background: #111111;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.096);
     color:white;
+    padding: 10px 7.5%;
+}
+
+#listaMenu {
+    list-style:none;
+    display: inline-block;
 }
 
 body {
@@ -33,11 +92,6 @@ body {
 }
 
 
-#headerCentral {
-    padding: 20px 7.5%;
-    margin: 0 auto;
-
-}
 
 #layoutTop {
     display: flex;
@@ -52,12 +106,74 @@ body {
 }
 
 #layoutCentral {
-    flex: 0 1 406px;
+    flex: 0 1 700px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 16px;
 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 0px;
+}
+
+li {
+    float: left;
+    color: black;
+
+}
+
+li.sticky a{
+    color:white;
+}
+
+li a {
+    position: relative;
+    z-index: 102;
+    display: inline-block;
+    padding: 8px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -.011em;
+    text-decoration: none;
+    color:black;
+}
+
+li a:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+#a.sticky {
+    color:#d5d5d6;
+}
+
+#b.sticky {
+    color:#d5d5d6;
+}
+
+#x.sticky {
+    color:#d5d5d6;
+}
+
+#d.sticky {
+    color:#d5d5d6;
+}
+
+
+  
+@-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
 }
 
 #layoutDcha {
@@ -95,11 +211,12 @@ body {
 }
 
 .seccion {
-    position:relative;
+    position:absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom:150px;
+    top:0;
+
 }
 
 .seccion div {
@@ -122,8 +239,23 @@ body {
     margin-top: 50px;
 }
 
+
 #primeraSeccion {
-    top:50px;
+    top:0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    position:relative;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom:390px;
+}
+
+#primeraSeccion div {
+    display: block;
+    flex-direction: column;
+    margin-top: 0px;
 }
 
 
@@ -142,6 +274,10 @@ body {
     background: #1985A1;
     background: linear-gradient(to right, #1985A1 6%, #CB59CF 97%);
     border: none;
+    margin: auto;
+    margin-top: 35px;
+    transition: 0.4s;
+
 
 }
 
@@ -156,24 +292,53 @@ body {
 
 #imagenPresentacion img {
     border-radius: 50%;
+
+        height: 320px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    
 }
 
 #presentacionNombre {
-    border-left: 1px solid black;
-    padding-left: 50px;
-    align-items:flex-start;
-    max-width: 40%;
+    /*padding-left: 50px;*/
+    /*align-items:flex-start;*/
+    max-width: 60%;
+    text-align: center;
+    margin: auto;
+
 
 }
 
 #presentacionNombre h1{
-    font-size: 3.5em;
-    font-weight: 600;
+    font-size: 82px;
+    line-height: 1.1;
+    letter-spacing: -.045em;
+    margin-top: 60px;
+    margin-bottom: 20px;  
+    color:white; 
+    background: #1985A1;
+    background: linear-gradient(to right, #1985A1 6%, #CB59CF 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+#presentacionNombre h4 {
+    color: #161616;
+    opacity: .75;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -.04em;
+    margin: auto;
 }
 
 #presentacionNombre p {
     font-size: 1.2em;
-    max-width: 90%;
+
+    /*max-width: 90%;*/
 }
 
 
@@ -182,8 +347,9 @@ body {
     border-radius: 20px;
 }
 
+
 .separadores {
-    height: 150px;
+    height: 200px;
     overflow: hidden;
     position:relative;
     top:0px;
@@ -374,7 +540,31 @@ body {
     position:absolute;
     border-radius: 10px;
     top:40px;
-    background-image: url(https://media.csesoc.org.au/content/images/2019/10/learn11.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.web {
+    background-image: url("./demoWeb.gif");
+
+}
+
+.juego {
+    background-image: url("./demoJuego.gif");
+
+}
+
+
+
+#videoJuego {
+    height: 320px;
+    width: 658px;
+    margin-left: 20px;
+    position:absolute;
+    border-radius: 10px;
+    top:40px;
+    background-image: url("./demoJuego.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
@@ -448,26 +638,18 @@ body {
     background: linear-gradient(90deg, rgba(25,133,161,1) 21%, rgba(203,89,207,1) 77%);
 }
 
-#videoJuego {
-    height: 413px;
-    width: 245px;
-    margin-left: 133px;
+
+
+#manoMovil {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    top:-40px;
     transform: skew(-18deg);
-    z-index: 400;
-    position:absolute;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 33px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    top:35px;
-    background-image: url(https://c.tenor.com/1wZ88hrB5SwAAAAd/subway-surfer.gif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
 }
 
 #segundaSeccion {
-    background-color: #101014;
+    background-color: #0c0c0c;
     position:relative;
 
 }
@@ -515,47 +697,78 @@ body {
 }
 
 #java {
-    width: 95%;
-    min-width: 95%;
+    width: 0%;
+    min-width: 0%;
     background: linear-gradient(269deg, #d37dec, #7decd4);
     background-size: 400% 400%;
-
+    transition: .6s;
     -webkit-animation: animacionGradientHabs 10s ease infinite;
     -moz-animation: animacionGradientHabs 10s ease infinite;
     animation: animacionGradientHabs 10s ease infinite;
+}
+
+#java.activo {
+    width: 95%;
+    min-width: 95%;
+}
+
+@keyframes prueba {
+    from {
+        width: 0%;
+        min-width: 0%;
+    }
+    to {
+        width: 95%;
+        min-width: 95%;
+    }
 }
 
 #cssHTML {
-    width: 81%;
-    min-width: 81%;
+    width: 0%;
+    min-width: 0%;
     background: linear-gradient(269deg, #5e53f0, #8cec7d);
     background-size: 400% 400%;
-
+    transition: .6s;
     -webkit-animation: animacionGradientHabs 10s ease infinite;
     -moz-animation: animacionGradientHabs 10s ease infinite;
     animation: animacionGradientHabs 10s ease infinite;
+}
+
+#cssHTML.activo  {
+    width: 81%;
+    min-width: 81%;
 }
 
 #sql {
-    width: 90%;
-    min-width: 90%;
+    width: 0%;
+    min-width: 0%;
     background: linear-gradient(269deg, #aba8dd, #be48ec);
     background-size: 400% 400%;
-
+    transition: .6s;
     -webkit-animation: animacionGradientHabs 10s ease infinite;
     -moz-animation: animacionGradientHabs 10s ease infinite;
     animation: animacionGradientHabs 10s ease infinite;
 }
 
+#sql.activo  {
+    width: 90%;
+    min-width: 90%;
+}
+
 #c {
-    width: 55%;
-    min-width: 55%;
+    width: 0%;
+    min-width: 0%;
     background: linear-gradient(269deg, #e23fc7, #e3ee4d);
     background-size: 400% 400%;
-
+    transition: .6s;
     -webkit-animation: animacionGradientHabs 10s ease infinite;
     -moz-animation: animacionGradientHabs 10s ease infinite;
     animation: animacionGradientHabs 10s ease infinite;
+}
+
+#c.activo  {
+    width: 55%;
+    min-width: 55%;
 }
 
 @-webkit-keyframes animacionGradientHabs {
@@ -574,8 +787,37 @@ body {
     100%{background-position:0% 50%}
 }
 
+
+#separadorFrase {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-image: linear-gradient(186deg, rgba(0, 0, 0, 0.74) 12%, rgba(0, 0, 0, 0.74) 88%),url("https://www.wallpapertip.com/wmimgs/136-1369543_laptop-coding.jpg");
+    padding: 150px;
+    
+}
+
+#separadorFrase h1{
+    font-size: 62px;
+    line-height: 1.1;
+    letter-spacing: -.045em;
+    margin-top: 60px;
+    margin-bottom: 20px;  
+    text-align: center;
+    min-width: 90%;
+    color:white; 
+    background: #1985A1;
+    background: linear-gradient(to right, #1985A1 6%, #CB59CF 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
 #terceraSeccion {
-    background-color: #171218;
+    background-color: #111316;
+    /*background-color: #F0F0F0;*/
 }
 
 #cuartaSeccion {
@@ -601,17 +843,22 @@ body {
 .contenedorEstudios {
     margin:auto;
     width:70%;
-    border: 1px solid hsla(0,0%,51.4%,.16);
     border-radius: 20px;
 
 }
 
 .contenedorEstudios h3 {
     color:white;
+    line-height: 1.6;
+    letter-spacing: -.04em;
 }
 
 .contenedorEstudios h4 {
-    color:white;
+    color: #f5f5f7;
+    opacity: .75;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -.04em;
     font-style: italic;
     font-size:medium;
     margin-top: 10px;
@@ -634,11 +881,15 @@ body {
 
 }
 
+
+
 .imagenEstudio {
     width:90px;
     height:90px;
     border-radius:50%;
-    background-color:red;
+    border:1px solid rgba(255, 255, 255, 0.219);
+    background-color:#000000c2;
+    border:1px solid rgba(255, 255, 255, 0.438);
     margin:auto;
     margin-top: 20px;
     margin-bottom: 20px;   
@@ -653,14 +904,54 @@ body {
     transform: translateY(-50%);
 }
 
-#estudiosOficialesColor {
-    background: rgb(203,89,207);
-    background: linear-gradient(90deg, rgba(203,89,207,1) 21%, rgba(25,133,161,1) 77%);
+.estudiosFondo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.infoEstudios {
+    background-color:#000000c2;
+    border:1px solid rgba(255, 255, 255, 0.219);
+
+    width: 100%;
+    border-radius: 20px;
+    top:2.5px;
+    margin: auto;
+    position:relative;
+
 }
 
 #estudiosCursosColor {
     background: rgba(25,133,161,1);
     background: linear-gradient(90deg, rgba(25,133,161,1) 21%, rgb(203,89,207) 77%);
+    
+}
+
+#estudio1 {
+    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29tcHV0ZXIlMjBoYXJkd2FyZXxlbnwwfHwwfHw%3D&w=1000&q=80");
+
+}
+
+#estudio2 {
+    background-image: url("https://blog.juandesouza.com/wp-content/uploads/2020/07/juandesouza_frameworks-de-desenvolvedores.jpg");
+}
+
+#estudio3 {
+    background-image: url("https://images7.alphacoders.com/122/1228014.png");
+}
+
+#estudio4 {
+    background-image: url("./sqlCode.png");
+}
+
+#estudio5 {
+    background-image: url("https://img2.goodfon.com/wallpaper/nbig/2/cb/bukvy-angliyskiy-haos.jpg");
+}
+
+#estudio6 {
+    background-image: url("https://www.tanikal.com/wp-content/uploads/2017/11/code-html-css-editor-boskampi.jpg");
 }
 
 footer {
@@ -675,10 +966,9 @@ footer h2 {
     letter-spacing: -.025em;
 }
 
+
+
 @media only screen and (max-width: 1267px) {
-    #presentacionNombre h1{
-        font-size: 3em;
-    }
 
     #videoDemo {
         height: 310px;
@@ -698,6 +988,14 @@ footer h2 {
         font-size: 27px;
     
     }
+
+    video {
+        height: 70%;
+        width: 100%;
+    
+    }
+
+
     
 }
 
@@ -844,6 +1142,10 @@ footer h2 {
 
     }
 
+    #listaMenu {
+        display: none;
+    }
+
     
 
 }
@@ -898,6 +1200,17 @@ footer h2 {
     .spanItemNumero {
         font-size: 40px;
     }
+
+    .gridEstudios {
+        display: block;
+
+    }
+    
+    .gridEstudios  > div {
+        margin-top: 30px;
+
+    
+    }
 }
 
 
@@ -910,17 +1223,15 @@ footer h2 {
         max-width: 55%;
     }
 
-    #videoJuego {
-        top:242px;
+
+
+    .item6 h1 {
+        font-size: 38px;
     }
 
     #videoJuego {
         top:240px;
         height: 415px;
-    }
-
-    .item6 h1 {
-        font-size: 38px;
     }
 
     .item6 img {
@@ -980,6 +1291,31 @@ footer h2 {
         width: 240px;
     }
 
+    .video-wrapper {
+        display: none;
+    }
+    header {
+        background-color: white;
+    }
+
+    #primeraSeccion {
+        padding-bottom:130px;
+    }
+
+    #presentacionNombre h1{
+        font-size: 3.2em;
+
+    }
+
+    .botonContacto {
+        font-size: 23px;
+        height: 62px;
+        margin-top: 70px ;
+
+
+    }
+
+
 }
 
 
@@ -993,6 +1329,9 @@ footer h2 {
         margin-left: 14px;
 
     }
+
+    
+
 
 }
 
@@ -1033,10 +1372,7 @@ footer h2 {
 
     }
 
-    #presentacionNombre h1{
-        font-size: 2.8em;
 
-    }
 
     #presentacionNombre p {
         font-size: 1.2em;
@@ -1051,7 +1387,7 @@ footer h2 {
         margin-bottom: 70px;
     }
 
-    .botonContacto{
+    .botacto{
         font-size: 27px;
         height: 66px;
 
@@ -1067,10 +1403,42 @@ footer h2 {
 @media only screen and (max-width: 700px) {
 
     #fraseSuperiorSeccion {
-        font-size: 43px;
+        font-size: 42px;
 
     }
 
+
+    .item6 img {
+        width: 400px;
+        height: 300px;
+    }
+
+    #videoDemo {
+        height: 200px;
+        width: 374px;
+        top:230px;
+        margin-left: 14px;
+
+    }
+
+    #manoMovil {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        top:-40px;
+        transform: skew(-18deg);
+    }
+
+    #videoJuego {
+        height: 347px;
+        width: 206px;
+        top:268px;
+        margin-left: 110px;
+
+    }
+
+
+    /*
     #videoDemo {
         display: none;
     }
@@ -1080,10 +1448,56 @@ footer h2 {
     }
     .item6 img{
         display: none;
-    }
+    }*/
 
 
 }
+
+@media only screen and (max-width: 650px) {
+
+    #videoDemo {
+        top:252px;
+
+    }
+
+    #videoJuego {
+        top:292px;
+
+
+    }
+
+    #separadorFrase h1{
+        font-size: 39px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .item6 img {
+        width: 300px;
+        height: 200px;
+    }
+
+    #videoDemo {
+        height: 130px;
+        width: 282px;
+        top:247px;
+        margin-left: 8px;
+
+    }
+
+    #manoMovil {
+        display: none;
+
+    }
+
+    #videoJuego {
+        display: none;
+
+    }
+
+    
+}
+
 
 
 
