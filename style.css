@@ -190,9 +190,9 @@ li a:hover {
     position: relative;
     padding-left: 16px;
     padding-right: 16px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
-    height: 48px;
+    height: 50px;
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -241,7 +241,7 @@ li a:hover {
 
 
 #primeraSeccion {
-    top:0px;
+    top:30px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -264,11 +264,11 @@ li a:hover {
     text-align: center;
     padding-left: 16px;
     padding-right: 16px;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 700;
-    height: 48px;
+    height: 65px;
     border-radius: 24px;
-    margin-top: 25px;
+    margin-top: 30px;
     align-items: center;
     color:white;
     background: #1985A1;
@@ -907,7 +907,6 @@ li a:hover {
 .estudiosFondo {
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center; 
 }
 
@@ -1308,9 +1307,8 @@ footer h2 {
     }
 
     .botonContacto {
-        font-size: 23px;
-        height: 62px;
-        margin-top: 70px ;
+
+        margin-top: 60px ;
 
 
     }
