@@ -5,10 +5,7 @@
     background-color: #1986a160;
 }
 
-body {
 
-
-}
 
 *,*::before,*::after {
     padding: 0;
@@ -190,9 +187,9 @@ li a:hover {
     position: relative;
     padding-left: 16px;
     padding-right: 16px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
-    height: 50px;
+    height: 48px;
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -241,7 +238,7 @@ li a:hover {
 
 
 #primeraSeccion {
-    top:30px;
+    top:0px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -249,7 +246,7 @@ li a:hover {
     display: block;
     justify-content: space-around;
     align-items: center;
-    padding-bottom:390px;
+    padding-bottom:300px;
 }
 
 #primeraSeccion div {
@@ -264,11 +261,11 @@ li a:hover {
     text-align: center;
     padding-left: 16px;
     padding-right: 16px;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 700;
-    height: 65px;
+    height: 48px;
     border-radius: 24px;
-    margin-top: 30px;
+    margin-top: 25px;
     align-items: center;
     color:white;
     background: #1985A1;
@@ -353,6 +350,13 @@ li a:hover {
     overflow: hidden;
     position:relative;
     top:0px;
+    background-color: #FDFFFF;
+    margin-top: 0px;
+}
+
+.separadores path {
+    stroke: none;
+    fill: #111111;
 }
 
 #tituloSeccion {
@@ -907,6 +911,7 @@ li a:hover {
 .estudiosFondo {
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center; 
 }
 
@@ -965,6 +970,17 @@ footer h2 {
     letter-spacing: -.025em;
 }
 
+
+@media (prefers-color-scheme: dark) {
+    .separadores {
+        background-color: #000000;
+    }
+    
+    .separadores path {
+        fill: #111111;
+    }
+
+}
 
 
 @media only screen and (max-width: 1267px) {
@@ -1307,8 +1323,9 @@ footer h2 {
     }
 
     .botonContacto {
-
-        margin-top: 60px ;
+        font-size: 23px;
+        height: 62px;
+        margin-top: 70px ;
 
 
     }
