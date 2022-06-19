@@ -3,7 +3,7 @@
     <head>
         <title>Inicio | Joaquín Erenas </title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.6">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link id="modoClaro" rel="stylesheet" type="text/css" href="style.css">
         <link rel="shortcut icon" href="icon.png">    
@@ -68,9 +68,9 @@
                     <div id="layoutCentral">                   
                         <ul id="listaMenu">
                             <li><a id="a" href="#">Inicio</a></li>
-                            <li><a id="b" href="#">Sobre mí</a></li>
-                            <li><a id="x" href="#">Habilidades</a></li>
-                            <li><a id="d" href="#">Proyectos</a></li>
+                            <li><a id="b" href="#sobreMi">Sobre mí</a></li>
+                            <li><a id="x" href="#proyectos">Proyectos</a></li>
+                            <li><a id="d" href="#habs">Habilidades</a></li>
                         </ul>
                     </div>
                     <div id="layoutDcha">
@@ -112,10 +112,12 @@
 
         <section id="seccionServicios">
             <div id="tituloSeccion">
-                <div>
-                    <h4 id="tituloSuperiorSeccion">Servicios</h4>
-                    <h2 id="fraseSuperiorSeccion">Sobre mí.</h2>
-                </div>
+                <a name="sobreMi">
+                    <div>
+                        <h4 id="tituloSuperiorSeccion">Servicios</h4>
+                        <h2 id="fraseSuperiorSeccion">Sobre mí.</h2>
+                    </div>
+                </a>
 
             </div>
             <div class="grid-container">
@@ -191,13 +193,15 @@
         </section>
 
         <section id="terceraSeccion">
-            <div id="tituloSeccion" style="margin-bottom:40px;">
-                <div>
-                    <h4 id="tituloSuperiorSeccion">Experiencia</h4>
-                    <h2 id="fraseSuperiorSeccion">Todos mis proyectos.</h2>
+            <a name="proyectos">
+                <div id="tituloSeccion" style="margin-bottom:40px;">
+                    <div>
+                        <h4 id="tituloSuperiorSeccion">Experiencia</h4>
+                        <h2 id="fraseSuperiorSeccion">Todos mis proyectos.</h2>
+                    </div>
+                    
                 </div>
-                
-            </div>
+            </a>
             <div class="flex-container">
                 <div id="proyectoUno">
                     <div class="bordeProyectos">
@@ -249,12 +253,14 @@
         </section>
 
         <section id="segundaSeccion">
-            <div id="tituloSeccion">
-                <div>
-                    <h4 id="tituloSuperiorSeccion">Aptitudes</h4>
-                    <h2 id="fraseSuperiorSeccion">Mis habilidades.</h2>
+            <a name="habs">
+                <div id="tituloSeccion">
+                    <div>
+                        <h4 id="tituloSuperiorSeccion">Aptitudes</h4>
+                        <h2 id="fraseSuperiorSeccion">Mis habilidades.</h2>
+                    </div>
                 </div>
-            </div>
+            </a>
             <article class="articulo"  style="margin-top:80px;">
                 <div>
                     <h1 class="tipoHabilidades">Basadas en mi trabajo</h1>

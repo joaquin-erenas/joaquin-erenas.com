@@ -3,7 +3,7 @@
     <head>
         <title>Home | Joaquín Erenas </title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.6">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link id="modoClaro" rel="stylesheet" type="text/css" href="style.css">
         <link rel="shortcut icon" href="icon.png">
@@ -71,13 +71,13 @@
                     <div id="layoutCentral">                   
                         <ul id="listaMenu">
                             <li><a id="a" href="#">Home</a></li>
-                            <li><a id="b" href="#">About me</a></li>
-                            <li><a id="x" href="#">Skills</a></li>
-                            <li><a id="d" href="#">Projects</a></li>
+                            <li><a id="b" href="#aboutMe">About me</a></li>
+                            <li><a id="x" href="#projects">Projects</a></li>
+                            <li><a id="d" href="#skills">Skills</a></li>
                         </ul>
                     </div>
                     <div id="layoutDcha">
-                        <button>Contact me</button>
+                        <button>Contact</button>
                     </div>
                     <div class="configuraciones">
                         <button id="configuracionIdioma" onclick="idioma()">Es</button>
@@ -110,13 +110,15 @@
         </div>
 
         <section id="seccionServicios">
-            <div id="tituloSeccion">
-                <div>
-                    <h4 id="tituloSuperiorSeccion">Services</h4>
-                    <h2 id="fraseSuperiorSeccion">About me.</h2>
+            <a name="aboutMe">
+                <div id="tituloSeccion">
+                    <div>
+                        <h4 id="tituloSuperiorSeccion">Services</h4>
+                        <h2 id="fraseSuperiorSeccion">About me.</h2>
+                    </div>
                 </div>
+            </a>
 
-            </div>
             <div class="grid-container">
                 <div class="item1">
                     <h4>Efficient and orderly services for everything you need.</h4>
@@ -189,13 +191,15 @@
         </section>
 
         <section id="terceraSeccion">
-            <div id="tituloSeccion" style="margin-bottom:40px;">
-                <div>
-                    <h4 id="tituloSuperiorSeccion">Experience</h4>
-                    <h2 id="fraseSuperiorSeccion">All my projects.</h2>
+            <a name="projects">
+                <div id="tituloSeccion" style="margin-bottom:40px;">
+                    <div>
+                        <h4 id="tituloSuperiorSeccion">Experience</h4>
+                        <h2 id="fraseSuperiorSeccion">All my projects.</h2>
+                    </div>
+                    
                 </div>
-                
-            </div>
+            </a>
             <div class="flex-container">
                 <div id="proyectoUno">
                     <div class="bordeProyectos">
@@ -247,12 +251,14 @@
         </section>
 
         <section id="segundaSeccion">
-            <div id="tituloSeccion">
-                <div>
-                    <h4 id="tituloSuperiorSeccion">Aptitudes</h4>
-                    <h2 id="fraseSuperiorSeccion">My skills.</h2>
+            <a name="skills">
+                <div id="tituloSeccion">
+                    <div>
+                        <h4 id="tituloSuperiorSeccion">Aptitudes</h4>
+                        <h2 id="fraseSuperiorSeccion">My skills.</h2>
+                    </div>
                 </div>
-            </div>
+            </a>
             <article class="articulo"  style="margin-top:80px;">
                 <div>
                     <h1 class="tipoHabilidades">Based on my work</h1>

@@ -5,7 +5,9 @@
     background-color: #1986a160;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 *,*::before,*::after {
     padding: 0;
@@ -1626,6 +1628,42 @@ footer h2 {
         top:268px;
         margin-left: 110px;
 
+    }
+
+    header.sticky {
+        padding: 25px 7.5%;
+    }
+
+    #logo.sticky {
+        width:64px;
+        height:64px;
+    }
+    
+    #layoutDcha button {
+        height: 68px;
+        font-size: 23px;
+
+    }
+
+    .configuraciones {
+
+        height: 72px;
+        width: 72px;
+
+    }
+
+    .configuraciones > button {
+
+        height: 70px;
+        width: 70px;
+
+    
+    }
+    
+    #configuracionIdioma {
+        font-size: 35px;
+
+    
     }
 
 
