@@ -3,6 +3,7 @@
 
 ::selection {
     background-color: #1986a160;
+
 }
 
 
@@ -16,7 +17,49 @@
 
 }
 
+.configuraciones {
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ebebeb;
+    border:2px outset rgb(0, 0, 0);
+    
+    border-radius: 50%;
+    height: 52px;
+    width: 52px;
+    transition: 0.4s;
+}
 
+
+
+.configuraciones > button {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 48px;
+    width: 48px;
+    background-color: transparent;
+    border:none;
+    margin: auto;
+    position:absolute;
+    cursor: pointer;
+
+}
+
+#configuracionIdioma {
+    font-size: 28px;
+    color:white;
+    background: #1985A1;
+    background: linear-gradient(to right, #1985A1 6%, #CB59CF 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 100000;
+
+}
+
+.configuraciones:hover {
+    transform: scale(1.1);
+}
 
 video {
     object-fit:fill;
@@ -185,11 +228,11 @@ li a:hover {
     border-radius: 24px;
     text-align: center;
     position: relative;
-    padding-left: 16px;
-    padding-right: 16px;
-    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
     font-weight: 700;
-    height: 48px;
+    height: 60px;
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -685,6 +728,7 @@ li a:hover {
     position:relative;
     text-align: center;
     top:-30px;
+    color:white;
     
 }
 
@@ -1006,6 +1050,7 @@ footer h2 {
     #presentacionNombre h4 {
         color:white;
     }
+
     .separadores {
         background-color: #000000;
     }
@@ -1041,6 +1086,15 @@ footer h2 {
 }
 
 @media (prefers-color-scheme: light) {
+
+    header.sticky {
+        background: #111111;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgba(0, 0, 0, 0.096);
+        padding: 10px 7.5%;
+    }
+    
     .separadores {
         background-color: #ffffff;
     }
@@ -1086,6 +1140,45 @@ footer h2 {
 
     #terceraSeccion {
         background-color: #d3d3d8;
+    }
+
+    #segundaSeccion {
+        background-color: #ffffff;
+    
+    }
+
+    .habilidades h4 {
+        color:rgb(0, 0, 0);
+        
+    }
+
+    .tipoHabilidades {
+        color:rgb(0, 0, 0);
+
+    }
+
+    .habilidades{
+        border:1px solid black;
+    }
+
+    #cuartaSeccion {
+        background-color: #ECECEC;
+    }
+
+    #a.sticky {
+        color:#000000;
+    }
+    
+    #b.sticky {
+        color:#000000;
+    }
+    
+    #x.sticky {
+        color:#000000;
+    }
+    
+    #d.sticky {
+        color:#000000;
     }
 
 
@@ -1431,7 +1524,10 @@ footer h2 {
         height: 62px;
         margin-top: 70px ;
 
+    }
 
+    #primeraSeccion {
+        min-height: 50vh;
     }
 
 
@@ -1591,18 +1687,15 @@ footer h2 {
 
     }
 
-
-    /*
-    #videoDemo {
-        display: none;
+    header.sticky {
+        padding: 25px 7.5%;
     }
 
-    #videoJuego {
-        display: none;
+    #logo.sticky {
+        width:64px;
+        height:64px;
     }
-    .item6 img{
-        display: none;
-    }*/
+
 
 
 }

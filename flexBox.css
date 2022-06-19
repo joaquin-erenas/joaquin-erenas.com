@@ -57,6 +57,7 @@
     border: 1px solid hsla(0,0%,62%,.2);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center; 
     position:absolute;
     margin: auto;

@@ -5,8 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.6">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="shortcut icon" href="icon.png">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link id="modoClaro" rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="icon.png">    
+        <script type="text/javascript">
+            function cambiarModo() {
+                var theme = document.getElementsByTagName('link')[0];
+    
+
+                if (theme.getAttribute('href') == 'style.css') {
+                    theme.setAttribute('href', 'styleDark.css');
+                } else {
+                    theme.setAttribute('href', 'style.css');
+                }
+            }
+        </script>
         <link rel="stylesheet" type="text/css" href="slider.css">
         <link rel="stylesheet" type="text/css" href="sliderFotos.css">
         <link rel="stylesheet" type="text/css" href="flexBox.css">
@@ -17,6 +29,7 @@
         <script type="text/typescript" src="videoScript.ts"></script>
         <script src="sticky.js"></script>
         <script src="habilidades.js"></script>
+        <script src="cambiarIdioma.js"></script>
         <script src="sliderFotos.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/typescript" src="script.ts"></script>
@@ -27,8 +40,12 @@
             video.play();
             });
         </script>
+        <script>
+            function idioma(){
+                location.href="./indexEn.html"
 
-
+            }
+        </script>
         <script>
             $("document").ready( function () {
                 alert("El portfolio se encuentra inoperativo debido a su mantenimiento y actualización. Para más información contactar al siguiente correo electrónico: joaquinerenas23@gmail.com. Disculpen las molestias.");
@@ -41,8 +58,6 @@
                 <source src="videoPortfolio.mp4" type="video/mp4"></source>
              </video>
         </div>
-
-
 
         <header>
             <div> 
@@ -61,6 +76,14 @@
                     <div id="layoutDcha">
                         <button>Contactar</button>
                     </div>
+                    <div class="configuraciones">
+                        <button id="configuracionIdioma" onclick="idioma()">En</button>
+                    </div>
+
+                    <!--
+                    <button id="botonConfiguracion" onclick="idioma()"></button>
+                    <button onclick="cambiarModo()">OS</button>-->
+
                 </div>
             </div>
         </header>
