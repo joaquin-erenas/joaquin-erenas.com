@@ -26,6 +26,7 @@ video {
     top: 0px;
     left: 0;
 
+
 }
 .video-wrapper {
     position: absolute;
@@ -246,13 +247,19 @@ li a:hover {
     display: block;
     justify-content: space-around;
     align-items: center;
-    padding-bottom:300px;
+    min-height: 60vh;
 }
 
 #primeraSeccion div {
     display: block;
     flex-direction: column;
     margin-top: 0px;
+}
+
+#oscuro {
+    background-image: url("./dark-building.jpg");
+    background-attachment: fixed;
+
 }
 
 
@@ -319,6 +326,7 @@ li a:hover {
     background: linear-gradient(to right, #1985A1 6%, #CB59CF 97%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 0.4s;
 }
 
 
@@ -972,12 +980,50 @@ footer h2 {
 
 
 @media (prefers-color-scheme: dark) {
+
+    #luz {
+        display: none;
+    }
+
+    .video-wrapper {
+        display: none;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    header {
+        background-color: black;
+  
+    }
+
+    #presentacionNombre h4 {
+        color:white;
+    }
     .separadores {
         background-color: #000000;
     }
     
     .separadores path {
         fill: #111111;
+    }
+
+
+
+}
+
+@media (prefers-color-scheme: light) {
+    .separadores {
+        background-color: #ffffff;
+    }
+    
+    .separadores path {
+        fill: #111111;
+    }
+
+    #oscuro {
+        display: none;
     }
 
 }
@@ -1015,10 +1061,6 @@ footer h2 {
 }
 
 @media only screen and (max-width: 1150px) {
-    #presentacionNombre h1{
-        font-size: 3em;
-    }
-
 
     #videoDemo {
         height: 275px;
@@ -1296,7 +1338,7 @@ footer h2 {
 }
 
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 860px) and (prefers-color-scheme: light){
     #videoJuego {
         top:238px;
     }
@@ -1311,6 +1353,40 @@ footer h2 {
     }
     header {
         background-color: white;
+    }
+
+    #primeraSeccion {
+        padding-bottom:130px;
+    }
+
+    #presentacionNombre h1{
+        font-size: 3.2em;
+
+    }
+
+    .botonContacto {
+        font-size: 23px;
+        height: 62px;
+        margin-top: 70px ;
+
+
+    }
+
+
+}
+
+@media only screen and (max-width: 860px) and (prefers-color-scheme: dark){
+    #videoJuego {
+        top:238px;
+    }
+    #layoutIzq h1 {
+        font-size: 20px;
+        padding: 20px;
+        width: 240px;
+    }
+
+    .video-wrapper {
+        display: none;
     }
 
     #primeraSeccion {
