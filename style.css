@@ -75,7 +75,6 @@ header.sticky {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgba(255, 255, 255, 0.096);
-    color:white;
     padding: 10px 7.5%;
 }
 
@@ -239,7 +238,7 @@ li a:hover {
 
 
 #primeraSeccion {
-    top:0px;
+    top:30px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -247,7 +246,7 @@ li a:hover {
     display: block;
     justify-content: space-around;
     align-items: center;
-    min-height: 60vh;
+    min-height: 80vh;
 }
 
 #primeraSeccion div {
@@ -256,11 +255,6 @@ li a:hover {
     margin-top: 0px;
 }
 
-#oscuro {
-    background-image: url("./dark-building.jpg");
-    background-attachment: fixed;
-
-}
 
 
 .botonContacto{
@@ -290,18 +284,23 @@ li a:hover {
     cursor: pointer;
 }
 
+
 #imagenPresentacion {
     border-radius: 50%;
 }
 
 #imagenPresentacion img {
     border-radius: 50%;
+    border:1px outset #ffffff;
+    height: 320px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    background: linear-gradient(-45deg, #fbd1ff 0%, #a2a5ff 100% );
+    -webkit-box-shadow: 5px 7px 10px 1px #EAC8FF, -10px -7px 15px 1px #B2ADFF, 5px 5px 5px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 7px 10px 1px #EAC8FF, -10px -7px 15px 1px #B2ADFF, 5px 5px 5px 5px rgba(0,0,0,0);
 
-        height: 320px;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 70px;
     
 }
 
@@ -365,6 +364,11 @@ li a:hover {
 .separadores path {
     stroke: none;
     fill: #111111;
+}
+
+#seccionServicios {
+    background-color: #111111;
+    padding-bottom: 100px;
 }
 
 #tituloSeccion {
@@ -594,6 +598,7 @@ li a:hover {
     text-align: left;
     margin-left: 5%;
     margin-top: 20%;
+    color:rgb(255, 255, 255);
 }
 
 .item6 p {
@@ -1009,6 +1014,28 @@ footer h2 {
         fill: #111111;
     }
 
+    #seccionServicios {
+        background-color: #111111;
+    }
+
+    li a {
+        color:rgb(255, 255, 255);
+    }
+
+    #imagenPresentacion img {
+        background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+        
+    }
+
+    #imagenPresentacion img {
+        -webkit-box-shadow: 5px 7px 10px 1px #C342FF, -10px -7px 15px 1px #699FFF, 5px 5px 5px 5px rgba(0,0,0,0); 
+        box-shadow: 5px 7px 10px 1px #C342FF, -10px -7px 15px 1px #699FFF, 5px 5px 5px 5px rgba(0,0,0,0);
+    
+        
+    }
+    
+
+
 
 
 }
@@ -1019,15 +1046,50 @@ footer h2 {
     }
     
     .separadores path {
-        fill: #111111;
+        fill: #ECECEC;
     }
 
     #oscuro {
         display: none;
     }
 
-}
+    #tituloSuperiorSeccion {
+        color:black;
+    }
+    #seccionServicios {
+        background-color: #ECECEC;
+    }
 
+    .grid-container > div {
+        background-color: #ffffff;
+        color:rgb(0, 0, 0); 
+    }
+
+    .item1 p {
+        color: #000000;
+    }
+
+    .explicacion_NumGrid {
+        color: #000000;
+    
+    }
+
+
+    header.sticky {
+        background: #ECECEC;
+
+    }
+
+    li.sticky a{
+        color:rgb(0, 0, 0);
+    }
+
+    #terceraSeccion {
+        background-color: #d3d3d8;
+    }
+
+
+}
 
 @media only screen and (max-width: 1267px) {
 
@@ -1431,13 +1493,14 @@ footer h2 {
         top:235px;
     }
 
+
     #fraseSuperiorSeccion {
         font-size: 60px;
 
     }
     
     #primeraSeccion {
-        top:10px;
+        top:30px;
     }
     .seccion {
         position:relative;
