@@ -5,27 +5,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.7">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link id="modoClaro" rel="stylesheet" type="text/css" href="style.css">
+        <link id="modoClaro" rel="stylesheet" type="text/css" href="estilo.css">
         <link rel="shortcut icon" href="icon.png">    
-        <script type="text/javascript">
-            function cambiarModo() {
-                var theme = document.getElementsByTagName('link')[0];
-    
-
-                if (theme.getAttribute('href') == 'style.css') {
-                    theme.setAttribute('href', 'styleDark.css');
-                } else {
-                    theme.setAttribute('href', 'style.css');
-                }
-            }
-        </script>
         <link rel="stylesheet" type="text/css" href="slider.css">
         <link rel="stylesheet" type="text/css" href="sliderFotos.css">
         <link rel="stylesheet" type="text/css" href="flexBox.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/3caa071d47.js" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+    <body id="body" class="modo-claro">
+        <script>
+            function toggleDarkLight() {
+            var body = document.getElementById("body");
+            var currentClass = body.className;
+            body.className = currentClass == "modo-oscuro" ? "modo-claro" : "modo-oscuro";
+        }
+        </script>
         <script type="text/typescript" src="videoScript.ts"></script>
         <script src="sticky.js"></script>
         <script src="habilidades.js"></script>
@@ -78,6 +73,10 @@
                         <a id="escribirCorreo" href="mailto:joaquinerenas23@gmail.com?Subject=Propuesta%20de%20colaboración." hidden></a>
                     </div>
                     <div class="configuraciones">
+                        <div id="configuracionTema">
+                            <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+
+                        </div>
                         <button id="configuracionIdioma" onclick="idioma()">En</button>
                     </div>
 
@@ -317,13 +316,6 @@
                 </div>
             </article>
         </section>
-        <!--
-        <div class="separadores" style="background-color: #0c0c0c;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M-1.12,84.37 C203.72,167.27 349.20,-49.98 518.05,24.17 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #101014"></path>
-            </svg>
-        </div>-->
-
 
         <section id="cuartaSeccion">
             <div id="tituloSeccion" style="margin-bottom:40px;">
@@ -405,11 +397,36 @@
             </div>
         </section>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="background-color: #101014;margin-bottom: -20px;">
-            <path fill="rgb(41, 41, 54)" fill-opacity="1" d="M0,32L11.4,42.7C22.9,53,46,75,69,69.3C91.4,64,114,32,137,58.7C160,85,183,171,206,202.7C228.6,235,251,213,274,186.7C297.1,160,320,128,343,133.3C365.7,139,389,181,411,176C434.3,171,457,117,480,112C502.9,107,526,149,549,160C571.4,171,594,149,617,149.3C640,149,663,171,686,181.3C708.6,192,731,192,754,170.7C777.1,149,800,107,823,106.7C845.7,107,869,149,891,176C914.3,203,937,213,960,224C982.9,235,1006,245,1029,245.3C1051.4,245,1074,235,1097,229.3C1120,224,1143,224,1166,197.3C1188.6,171,1211,117,1234,122.7C1257.1,128,1280,192,1303,224C1325.7,256,1349,256,1371,240C1394.3,224,1417,192,1429,176L1440,160L1440,320L1428.6,320C1417.1,320,1394,320,1371,320C1348.6,320,1326,320,1303,320C1280,320,1257,320,1234,320C1211.4,320,1189,320,1166,320C1142.9,320,1120,320,1097,320C1074.3,320,1051,320,1029,320C1005.7,320,983,320,960,320C937.1,320,914,320,891,320C868.6,320,846,320,823,320C800,320,777,320,754,320C731.4,320,709,320,686,320C662.9,320,640,320,617,320C594.3,320,571,320,549,320C525.7,320,503,320,480,320C457.1,320,434,320,411,320C388.6,320,366,320,343,320C320,320,297,320,274,320C251.4,320,229,320,206,320C182.9,320,160,320,137,320C114.3,320,91,320,69,320C45.7,320,23,320,11,320L0,320Z"></path>
-        </svg>
         <footer>
-            <h2>©️ 2022 Copyright: Joaquín-Erenas.es</h2>
+            <div class="grupo1Foot">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="./icon.png">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE MI</h2>
+                    <p>Desarrollador web amateur en busca de desafíos y proyectos interesantes.</p>
+                    <p>Para más información contactar al siguiente correo electrónico: joaquinerenas23@gmail.com</p>
+
+                </div>
+                <div class="box">
+                    <h2>SÍGUEME !</h2>
+                    <div class="red-social">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="fa-solid fa-instagram"></a>
+                        <a href="#" class="fa-solid fa-twitter"></a>
+                        <a href="#" class="fa-solid fa-github"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy;2022 <b>Joaquín Erenas</b> - Todos los derechos reservados</small>
+            </div>
         </footer>
 
         <div class="cursor"></div>
