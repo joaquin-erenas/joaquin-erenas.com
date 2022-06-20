@@ -38,6 +38,10 @@ width:52px;
 transition:.4s
 }
 
+body.modo-oscuro .configuraciones:hover {
+  transform: scale(1.1);
+}
+
 body.modo-oscuro .configuraciones > button {
 background-size:cover;
 background-repeat:no-repeat;
@@ -47,7 +51,9 @@ width:48px;
 background-color:transparent;
 border:none;
 margin:auto;
-position:absolute
+position:absolute;
+cursor: pointer;
+
 }
 
 body.modo-oscuro #configuracionIdioma {
@@ -60,15 +66,33 @@ background:linear-gradient(to right,#1985A1 6%,#CB59CF 97%);
 z-index:100000
 }
 
-body.modo-oscuro #configuracionTema {
-background-image:url(./eclipse.png);
-bottom:130px;
+body.modo-oscuro #configuracionTema  {
+  position:fixed;
+  right:20px;
+  bottom:80px;
+  background-color:#ebebeb;
+  border:2px solid #000;
+  border-radius:50%;
+  height:52px;
+  width:52px;
+  -webkit-transition:.4s;
+  transition:.4s
 }
 
-body.modo-oscuro #configuracionTema:hover {
--webkit-transform:scale(1.1);
-transform:scale(1.1)
+body.modo-oscuro #configuracionTema button {
+  border-radius:50%;
+  height:48px;
+  width:48px;
+  -webkit-transition:.4s;
+  transition:.4s;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(68, 155, 255);
+  background-image: url("./sol.png");
+  background-position: center;
+  cursor: pointer;
 }
+
 
 body.modo-oscuro video {
 -o-object-fit:fill;
@@ -329,7 +353,7 @@ justify-content:space-around;
 -webkit-box-align:center;
 -ms-flex-align:center;
 align-items:center;
-min-height:80vh
+min-height:80vh;
 }
 
 body.modo-oscuro #primeraSeccion div {
@@ -980,7 +1004,7 @@ background-size:cover;
 background-repeat:no-repeat;
 background-attachment:fixed;
 background-position:center;
-background-image:linear-gradient(186deg,rgba(0,0,0,0.74) 12%,rgba(0,0,0,0.74) 88%),url(./fondoPortatil.jpg);
+background-image:linear-gradient(186deg,rgba(0,0,0,0.74) 12%,rgba(0,0,0,0.74) 88%),url("https://www.wallpapertip.com/wmimgs/160-1605855_software-engineer-wallpaper.jpg");
 padding:150px
 }
 
@@ -1093,7 +1117,6 @@ transform:translateY(-50%)
 body.modo-oscuro .estudiosFondo {
 background-size:cover;
 background-repeat:no-repeat;
-background-attachment:fixed;
 background-position:center
 }
 
@@ -1139,7 +1162,7 @@ background-image:url(https://www.tanikal.com/wp-content/uploads/2017/11/code-htm
 
 body.modo-oscuro footer {
   width:100%;
-  background-color: #15212b;
+  background-color: #0f0f0f;
   border-top: 1px solid rgba(255, 255, 255, 0.096);
   
   }
@@ -1193,7 +1216,7 @@ body.modo-oscuro footer {
   }
   
   body.modo-oscuro footer .grupo-2 {
-    background-color: #0a1a2a;
+    background-color: #444444;
     padding: 15px 10px;
     text-align: center;
     color:#fff;
@@ -1687,6 +1710,7 @@ width:70px
 body.modo-oscuro #configuracionIdioma {
 font-size:35px
 }
+
 }
 
 @media only screen and (max-width: 650px) {
@@ -1766,6 +1790,35 @@ body.modo-claro .configuraciones:hover {
 -webkit-transform:scale(1.1);
 transform:scale(1.1)
 }
+
+body.modo-claro #configuracionTema  {
+  position:fixed;
+  right:20px;
+  bottom:80px;
+  background-color:#ebebeb;
+  border:2px solid #000;
+  border-radius:50%;
+  height:52px;
+  width:52px;
+  -webkit-transition:.4s;
+  transition:.4s
+}
+
+body.modo-claro #configuracionTema button {
+  border-radius:50%;
+  height:48px;
+  width:48px;
+  -webkit-transition:.4s;
+  transition:.4s;
+  margin: auto;
+  text-align: center;
+  background-color: #000;
+  background-image: url("./luna.png");
+  background-position: center;
+  cursor: pointer;
+
+}
+
 
 body.modo-claro video {
 -o-object-fit:fill;
@@ -2682,7 +2735,7 @@ background-size:cover;
 background-repeat:no-repeat;
 background-attachment:fixed;
 background-position:center;
-background-image:linear-gradient(186deg,rgba(0,0,0,0.74) 12%,rgba(0,0,0,0.74) 88%),url(./fondoPortatil.jpg);
+background-image:linear-gradient(186deg,rgba(0,0,0,0.74) 12%,rgba(0,0,0,0.74) 88%),url("https://www.wallpapertip.com/wmimgs/160-1605855_software-engineer-wallpaper.jpg");
 padding:150px
 }
 
@@ -3105,7 +3158,7 @@ padding-bottom:0
 
 body.modo-claro .explicacion_NumGrid {
 margin:auto;
-color:#f5f5f7;
+color:#000000;
 opacity:.8;
 letter-spacing:-.02em;
 line-height:1.2;
@@ -3457,4 +3510,14 @@ display:none
 body.modo-claro #videoJuego {
 display:none
 }
+
+@media only screen and (max-width: 500px) {
+  body.modo-claro #videoDemo {
+    top:243px;
+    width:284px;
+
+
+  }
+}
+
 }
