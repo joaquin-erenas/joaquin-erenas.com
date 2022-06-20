@@ -26,14 +26,6 @@
         <script src="habilidades.js"></script>
         <script src="sliderFotos.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/typescript" src="script.ts"></script>
-        <script type="text/typescript">
-            const video = document.getElementById('main-video') as HTMLVideoElement;
-            video.addEventListener('ended', () => {
-            video.currentTime = 0.3;
-            video.play();
-            });
-        </script>
         <script>
             function idioma(){
                 location.href="./index.html"
@@ -49,8 +41,14 @@
 
         
         <div class="video-wrapper">
-            <video autoplay muted id="main-video">
+            <video autoplay muted loop id="main-video">
                 <source src="videoPortfolio.mp4" type="video/mp4"></source>
+             </video>
+        </div>
+
+        <div class="video-wrapper" id="videoOscuro">
+            <video autoplay muted loop id="main-video">
+                <source src="videoPortfolioOscuro.mp4" type="video/mp4"></source>
              </video>
         </div>
 
@@ -169,7 +167,7 @@
                 </div>
                 <div class="item8">
                     <h2>✘</h2>
-                    <h4 class="explicacion_NumGrid" style="padding-left:15px;padding-right:15px">Código lioso</h4>
+                    <h4 class="explicacion_NumGrid" style="padding-left:15px;padding-right:15px">Messed up code</h4>
                 </div>
                 <div class="item6" id="fondoCuadroJuegos">
                     <div>
@@ -427,9 +425,7 @@
             </div>
         </footer>
 
-        <div class="cursor"></div>
-        <script src="https://rawgit.com/Microsoft/TypeScript/master/lib/typescriptServices.js"></script>
-        <script src="https://rawgit.com/basarat/typescript-script/master/transpiler.js"></script>
+
 
         
     </body>

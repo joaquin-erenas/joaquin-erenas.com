@@ -108,6 +108,14 @@ body.modo-oscuro .video-wrapper {
 display:none
 }
 
+body.modo-oscuro #videoClaro {
+  display: none;
+}
+
+body.modo-oscuro #videoOscuro {
+  display:block;
+}
+
 body.modo-oscuro #logo {
 width:64px;
 height:64px;
@@ -659,7 +667,6 @@ position:absolute;
 border-radius:10px;
 top:40px;
 background-repeat:no-repeat;
-background-attachment:fixed;
 background-position:center
 }
 
@@ -1850,6 +1857,10 @@ min-width:100%;
 min-height:100%;
 width:auto;
 height:auto
+}
+
+body.modo-claro #videoOscuro {
+  display: none;
 }
 
 body.modo-claro #logo {
